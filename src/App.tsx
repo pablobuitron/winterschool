@@ -87,7 +87,7 @@ function App() {
         case 'seminars':
         return <SeminarsSection />;
       case 'working-groups':
-        return <WorkingGroupsSection scientificCommittee={scientificCommittee} />;
+        return <WorkingGroupsSection />;
       case 'posters':
         return <PostersSection />;
       /*case 'program':
@@ -351,72 +351,22 @@ const CommitteesSection: React.FC<{
 
 
 /* ---------- WORKING GROUPS ---------- */
-const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
-  scientificCommittee,
-}) => {
-  const affiliation = (name: string) =>
-    scientificCommittee.find((p) => p.name.includes(name))?.affiliation || '';
+const WorkingGroupsSection: React.FC = () => (
+  <SectionWrapper title="Working Groups">
+    <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
+      <p>
+        Working Groups will provide participants with the opportunity to
+        collaborate on interdisciplinary topics related to computational
+        learning, mathematics and design.
+      </p>
 
-  const groups = [
-    {
-      names: ['Luisa Fermo', 'Giuseppe Rodriguez'],
-      topic: 'Numerical integration and applications to integral equations',
-    },
-    {
-      names: ['Nicola Mastronardi', 'Francisco Marcellan'],
-      topic: 'Sobolev orthogonal polynomials: theoretical and computational aspects',
-    },
-    {
-      names: ['Amir Noorizadegan', 'Roberto Cavoretto'],
-      topic: 'Meshless methods and scientific Machine Learning',
-    },
-    {
-      names: ['Clemente Cesarano'],
-      topic: 'Operator theory in describing and analyzing special polynomials',
-    },
-  ];
-
-  const sortNamesByLastName = (names: string[]) =>
-    [...names].sort((a, b) => {
-      const lastA = a.split(' ').slice(-1)[0].toLowerCase();
-      const lastB = b.split(' ').slice(-1)[0].toLowerCase();
-      return lastA.localeCompare(lastB);
-    });
-
-  const normalizedGroups = groups.map((g) => ({
-    ...g,
-    names: sortNamesByLastName(g.names),
-  }));
-
-  return (
-    <SectionWrapper title="Working Groups">
-      <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
-        {/* Párrafo introductorio arriba de la lista */}
-        <p>
-          Working Groups are designed to foster in-depth discussion and collaboration
-          on specific research topics. They offer participants the opportunity to
-          exchange ideas, develop joint projects, and explore emerging issues in
-          their field. Results of the participants’ research may also be presented
-          during the poster session. The following Working Groups will be organized: 
-        </p>
-
-        <ol className="list-decimal list-inside space-y-4">
-          {normalizedGroups.map((g, i) => (
-            <li key={i}>
-              {g.names.map((n, idx) => (
-                <React.Fragment key={n}>
-                  <strong>{n}</strong> ({affiliation(n)})
-                  {idx < g.names.length - 1 ? ' and ' : ''}
-                </React.Fragment>
-              ))}
-              : {g.topic}
-            </li>
-          ))}
-        </ol>
-      </div>
-    </SectionWrapper>
-  );
-};
+      <p>
+        Further information about the topics, coordinators and activities will
+        be announced soon.
+      </p>
+    </div>
+  </SectionWrapper>
+);
 
 
 
@@ -424,101 +374,15 @@ const WorkingGroupsSection: React.FC<{ scientificCommittee: Member[] }> = ({
 const PostersSection: React.FC = () => (
   <SectionWrapper title="Posters">
     <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
-      
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Adaptive RBF algorithm for scattered data cubature on spherical polygons
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Roberto Cavoretto <span className="text-gray-600">(University of Torino)</span>
-        </p>
-      </div>
+      <p className="text-base leading-relaxed">
+        Participants will have the opportunity to present their research and
+        projects during the poster session.
+      </p>
 
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          A Nystrom method for fractional integro-differential equations
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Maria Carmela De Bonis <span className="text-gray-600">(University of Basilicata)</span>
-        </p>
-      </div>
-
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Approximation Methods for Community Detection in Graphs: Classical and Learning-Based Approaches
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Alessandra De Rossi <span className="text-gray-600">(University of Torino)</span>
-        </p>
-      </div>
-
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Anti-Gauss Lagrange interpolation: Christoffel-Darboux form, barycentric representation, and orthogonal expansion
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Patricia Díaz de Alba <span className="text-gray-600">(University of Cagliari)</span>
-        </p>
-      </div>
-
-      
-
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Minimal-norm least-squares solution of first-kind integral equations: an approach which better approximates the continuous model
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Luisa Fermo <span className="text-gray-600">(University of Cagliari)</span>
-        </p>
-      </div>
-
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Adaptive Basis Function Optimization in Kolmogorov-Arnold Networks (KANs)
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Adeeba Haider <span className="text-gray-600">(University of Torino)</span>
-        </p>
-      </div>
-
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Some estimates for the error of best polynomial approximation of composite functions
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Concetta Laurita <span className="text-gray-600">(University of Basilicata)</span>
-        </p>
-      </div>
-
-      
-
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Representation of quadric surfaces through rational Bezier Triangles over the Simplex
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Andrés Quintana Martin <span className="text-gray-600">(University of Granada, Spain)</span>
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-lg font-semibold leading-snug">
-          Enriched Krylov spaces for general form regularization
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Giuseppe Rodriguez <span className="text-gray-600">(University of Cagliari)</span>
-        </p>
-      </div>
-
-      <div className="border-b border-gray-200 pb-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          Reliable computation of Gegenbauer-Sobolev polynomials and their zeros
-        </h3>
-        <p className="text-base text-gray-700 mt-1">
-          Niel Van Buggenhout <span className="text-gray-600">(Universidad Carlos III de Madrid)</span>
-        </p>
-      </div>
-
+      <p className="text-base leading-relaxed">
+        Information about poster submission, format and deadlines will be
+        announced soon.
+      </p>
     </div>
   </SectionWrapper>
 );
@@ -529,104 +393,8 @@ const LecturersSection: React.FC = () => (
   <SectionWrapper title="Lecturers">
     <div className="max-w-4xl mx-auto text-gray-800 space-y-8">
       <p className="text-base leading-relaxed">
-        The two minicourses of 8 hours each are:
+        The lecturers and courses of the Winter School will be announced soon.
       </p>
-
-      <div className="border-b border-gray-200 pb-8">
-        <p className="text-lg font-semibold">Teresa Perez</p>
-        <p className="text-base text-gray-600 mt-1">
-          Department of Mathematics, University of Granada, Spain
-        </p>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
-          </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            Orthogonal Polynomials in Several Variables: From Hermite to Zernike
-            and Beyond. Applications in Optics.
-          </h3>
-        </div>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Abstract
-          </p>
-          <p className="text-base leading-relaxed mt-2 text-gray-700">
-            The general theory of multivariate orthogonal polynomial (MOP) is far
-            from being considered a fully established mathematical theory, since
-            its evolution has been late and incomplete, primarily because its
-            study has been conditioned by the development of its many and varied
-            applications. From a purely theoretical point of view, it seems that
-            the first reference to multivariate orthogonal polynomials dates back
-            to 1865, when C. Hermite studied the natural extension to two
-            variables of the Legendre and Chebyshev polynomials, giving rise to
-            the first families of bivariate orthogonal polynomials, and observed
-            that the theory cannot be understood as a simple generalization of
-            univariate orthogonal polynomials. At first glance, it might seem
-            that the construction and study of orthogonal polynomials in several
-            variables presents no greater difficulties than those encountered
-            when considering a single variable. In theory, it would suffice to
-            apply standard orthogonalization algorithms to the ordered sequence
-            of monomials to obtain the orthogonal polynomials. But here the first
-            serious difficulty immediately arises: there is no single ordering
-            of the base powers of the monomials. Thus, it is necessary to choose
-            an order based on the objective. The choice of this order determines
-            theories with very different properties. One area of applications is
-            in Optics and Optometry through Zernike polynomials, that are
-            classical polynomials on the unit disk orthogonal with respect to the
-            Legendre measure. The families of multivariate orthogonal polynomials
-            typically involved in the applications are the so-called classical
-            orthogonal polynomials. The reason for their effectiveness in various
-            applications lies primarily in the fact that they are solutions to
-            partial differential equations, and in the differential properties of
-            the weight functions that define them. However, several factors cause
-            the applications described above to exhibit dysfunctions and these can
-            be improved by changing the basis of MOP based on perturbations of
-            the classical scalar products or by defining new orthogonality
-            concepts.
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <p className="text-lg font-semibold">Sheehan Olver</p>
-        <p className="text-base text-gray-600 mt-1">
-          Department of Mathematics, Imperial College of London, United Kingdom
-        </p>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
-          </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            Representation Theory Meets Approximation Theory
-          </h3>
-        </div>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Abstract
-          </p>
-          <p className="text-base leading-relaxed mt-2 text-gray-700">
-            Spherical harmonics are an example of a symmetry-adapted basis that
-            captures rotational symmetry of the sphere in 3D, and have numerous
-            advantages such as the parallelisation of the numerical solution of
-            partial differential equations. In this mini-course we see how this
-            idea can be generalised to discrete symmetry groups corresponding to
-            the square (dihedral group), cube (octohedral group) or permutations
-            (symmetric group). In particular, we will see how symmetry-adapted
-            bases can be numerically constructed which translate group actions
-            into irreducible representations; the building blocks of
-            representation theory. We will discuss from first principles the
-            basics of representation theory and how they can lead to numerical
-            techniques for constructing symmetry-adapted bases. Applications
-            include parallelisation of partial differential equations such as
-            multiple particle Schrödinger equation and Maxwell’s equation and the
-            construction of equivariant neural networks.
-          </p>
-        </div>
-      </div>
     </div>
   </SectionWrapper>
 );
@@ -635,37 +403,10 @@ const LecturersSection: React.FC = () => (
 const SeminarsSection: React.FC = () => (
   <SectionWrapper title="Seminars">
     <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
-      <div className="border-b border-gray-200 pb-4">
-        <p className="text-lg font-semibold">Roman Dmytryshyn</p>
-        <p className="text-base text-gray-600 mt-1">
-          Vasyl Stefanyk Carpathian National University, Ukraine
-        </p>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
-          </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            Representations of Analytical Functions by Branched Continued Fractions
-          </h3>
-        </div>
-      </div>
-
-      <div>
-        <p className="text-lg font-semibold">Woula Themistoclakis</p>
-        <p className="text-base text-gray-600 mt-1">
-          CNR National Research Council of Italy - IAC Institute
-        </p>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
-          </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            On Polynomial Wavelets via de la Vallée Poussin Interpolation and Their Applications
-          </h3>
-        </div>
-      </div>
+      <p className="text-base leading-relaxed">
+        Information about the seminars and invited speakers will be announced
+        soon.
+      </p>
     </div>
   </SectionWrapper>
 );
