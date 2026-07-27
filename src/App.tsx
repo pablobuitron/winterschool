@@ -309,7 +309,15 @@ const AboutSection: React.FC = () => (
 );
 
 /* ---------- COMMITTEES ---------- */
-const CommitteesSection: React.FC = () => (
+interface CommitteesSectionProps {
+  organizingCommittee: Member[];
+  scientificCommittee: Member[];
+}
+
+const CommitteesSection: React.FC<CommitteesSectionProps> = ({
+  organizingCommittee,
+  scientificCommittee,
+}) => (
   <SectionWrapper title="Committees">
     <div className="max-w-5xl mx-auto space-y-12">
       <div>
