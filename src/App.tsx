@@ -266,83 +266,99 @@ const HomeSection: React.FC = () => (
 
 /* ---------- ABOUT ---------- */
 const AboutSection: React.FC = () => (
-  <SectionWrapper title="About AASM 2026">
-    <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-4">
-      <p>
-        The <strong>Alps Approximation School and Meeting (AASM 2026)</strong> will be held
-        in <strong>Bardonecchia (TO), Italy</strong>, from <strong>June 1 to 5, 2026</strong>.
-      </p>
+  <SectionWrapper title="About the Winter School">
+    <div className="max-w-4xl mx-auto">
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-10">
+        <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+          <p>
+            The{' '}
+            <strong className="text-blue-900">
+              Winter School on Computational Learning and Design
+            </strong>{' '}
+            will take place at <strong>Domus Academy</strong> in Milan, Italy,
+            from <strong>February 1 to 5, 2027</strong>.
+          </p>
 
-      <p>
-        This international event combines a <strong>Summer School</strong> and a{" "}
-        <strong>Scientific Meeting</strong> devoted to{" "}
-        <strong>Approximation Theory</strong>, bringing together mathematicians,
-        researchers, and students interested in both fundamental advances and applied
-        perspectives.
-      </p>
+          <p>
+            The Winter School aims to bring together students, researchers,
+            educators and professionals interested in the intersection of
+            computational methods, machine learning, mathematics and design.
+          </p>
 
-      <p>
-        The program will explore <strong>theoretical frameworks</strong>,{" "}
-        <strong>computational methods</strong>, and{" "}
-        <strong>applications</strong> of approximation techniques to problems arising in{" "}
-        <strong>industrial and applied sciences</strong>.
-      </p>
+          <p>
+            Through lectures, seminars and collaborative activities,
+            participants will explore emerging approaches that combine
+            computational thinking, data-driven methods and creative design
+            processes.
+          </p>
 
-      <p>
-        The scientific program will include two courses of 8 hours each, two seminars, four working groups, and a poster session.
-      </p>
+          <p>
+            The event will provide an interdisciplinary environment for
+            discussing current challenges, exchanging ideas and fostering
+            collaborations between academia, industry and the design community.
+          </p>
 
-      <p>
-        The School will feature <strong>lectures by leading experts</strong>,{" "}
-        <strong>collaborative working sessions</strong>, and{" "}
-        <strong>hands-on software development activities</strong>, with a particular focus
-        on <strong>PhD students</strong>, <strong>postdoctoral fellows</strong>, and{" "}
-        <strong>early-career researchers</strong>.
-      </p>
-
-      <p>
-        <strong>A certificate of attendance and number of 5 ECTS will be assigned.</strong>
-      </p>
-
-      <p>
-        <strong>The maximum number of participants will be limited to 50.</strong>
-      </p>
-
+          <p className="font-medium text-blue-900">
+            Further information about lecturers, activities, registration and
+            the scientific programme will be announced soon.
+          </p>
+        </div>
+      </div>
     </div>
   </SectionWrapper>
 );
 
 /* ---------- COMMITTEES ---------- */
-const CommitteesSection: React.FC<{
-  organizingCommittee: Member[];
-  scientificCommittee: Member[];
-}> = ({ organizingCommittee, scientificCommittee }) => (
+const CommitteesSection: React.FC = () => (
   <SectionWrapper title="Committees">
-    <div className="max-w-3xl mx-auto space-y-10">
+    <div className="max-w-5xl mx-auto space-y-12">
       <div>
-        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+        <h3 className="text-2xl font-semibold text-blue-900 mb-6 text-center">
           Organizing Committee
         </h3>
-        <ul className="space-y-1">
-          {organizingCommittee.map((m, i) => (
-            <li key={i}>
-              {m.name} ({m.affiliation})
-            </li>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {organizingCommittee.map((member, index) => (
+            <div
+              key={index}
+              className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <h4 className="text-lg font-semibold text-gray-900">
+                {member.name}
+              </h4>
+
+              <p className="text-gray-600 mt-2 leading-relaxed">
+                {member.affiliation}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
-      <div>
-        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-          Scientific Committee
-        </h3>
-        <ul className="space-y-1">
-          {scientificCommittee.map((m, i) => (
-            <li key={i}>
-              {m.name} ({m.affiliation})
-            </li>
-          ))}
-        </ul>
-      </div>
+
+      {scientificCommittee.length > 0 && (
+        <div>
+          <h3 className="text-2xl font-semibold text-blue-900 mb-6 text-center">
+            Scientific Committee
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {scientificCommittee.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h4 className="text-lg font-semibold text-gray-900">
+                  {member.name}
+                </h4>
+
+                <p className="text-gray-600 mt-2 leading-relaxed">
+                  {member.affiliation}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   </SectionWrapper>
 );
