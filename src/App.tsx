@@ -637,93 +637,34 @@ const ProgramSection: React.FC = () => {
 
 
 
-/*--------REGISTRATION------ */
+/* ---------- REGISTRATION ---------- */
 const RegistrationSection: React.FC = () => (
   <SectionWrapper title="Registration">
     <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
       <p>
-        All the activities of <strong>AASM 2026</strong> will be held at the <strong>VILLAGGIO OLIMPICO BARDONECCHIA.</strong> 
+        All activities of the{' '}
+        <strong>Winter School on Computational Learning and Design</strong>{' '}
+        will be held at <strong>Domus Academy</strong> in Milan, Italy.
       </p>
 
       <ul className="list-none space-y-2">
         <li>
-          <strong>Dates:</strong> June 1st – June 5th, 2026
+          <strong>Dates:</strong> February 1–5, 2027
         </li>
+
         <li>
-          <strong>Mode of Study:</strong> on campus
+          <strong>Mode of study:</strong> on campus
         </li>
+
         <li>
-          <strong>Application deadline:</strong> April 15th, 2026
+          <strong>Venue:</strong> Domus Academy, Milan
         </li>
       </ul>
 
       <p>
-        Registration is closed.
+        Registration details, participation fees and application deadlines
+        will be announced soon.
       </p>
-
-      <p>
-        Please be informed that as of <strong>April 15th, 2026</strong>, those who have
-        filled out the application form will be contacted via email by{" "}
-        <strong>Dr. Tiziana Giovannelli</strong> (
-        <a
-          href="mailto:tiziana.giovannelli@uninettunouniversity.net"
-          className="text-blue-700 underline hover:text-blue-900"
-        >
-          tiziana.giovannelli@uninettunouniversity.net
-        </a>
-        ), who will send you a link to complete the final registration and payment for the{" "}
-        <strong>Alps Approximation School and Meeting (AASM 2026)</strong>.
-      </p>
-      
-
-      <p>
-        <strong>AASM 2026 PACKAGES</strong> include accommodation, coffee breaks, meals (breakfast, lunch and dinner)*, registration fee, school and meeting kit, social dinner, welcome drink (* from the dinner of the first day till the lunch of the last day)
-      </p>
-
-      <p>
-        <strong>AASM 2026 PACKAGES</strong>
-      </p>
-
-      <p>
-        <u><strong>Packages with Reduced Rates</strong> (applied to WG organizers, PhD students, post-docs)</u>
-      </p>  
-      
-      <ul className="list-none space-y-2">
-        <li>
-          [P1] 4 NIGHTS (1-5 June) in SHARED room - 500 Eur
-        </li>
-        <li>
-          [P2] 5 NIGHTS (1-6 June) in SHARED room - 600 Eur
-        </li>
-        <li>
-          [P3] 4 NIGHTS (1-5 June) in SINGLE room - 650 Eur
-        </li>
-        <li>
-          [P4] 5 NIGHTS (1-6 June) in SINGLE  room - 750 Eur
-        </li>
-      </ul>
-
-       <p>
-        <u><strong>Packages with Regular Rates</strong> (applied to all other participants, not eligible for a reduced rate)</u>
-      </p>  
-      
-      <ul className="list-none space-y-2">
-        <li>
-          [P5] 4 NIGHTS (1-5 June) in SHARED room - 600 Eur
-        </li>
-        <li>
-          [P6] 5 NIGHTS (1-6 June) in SHARED room - 700 Eur
-        </li>
-        <li>
-          [P7] 4 NIGHTS (1-5 June) in SINGLE room - 750 Eur
-        </li>
-        <li>
-          [P8] 5 NIGHTS (1-6 June) in SINGLE  room - 850 Eur
-        </li>
-      </ul>
-
-
-
     </div>
   </SectionWrapper>
 );
@@ -758,228 +699,63 @@ const ImportantDatesSection: React.FC = () => (
 /* ---------- SPONSORS ---------- */
 const SponsorsSection: React.FC = () => (
   <SectionWrapper title="Sponsors">
-    <div className="max-w-5xl mx-auto text-gray-800 text-base leading-relaxed space-y-8">
-      <p className="text-center">
-        Sponsors and institutional partners will be announced soon.
+    <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
+      <p>
+        Sponsors and institutional partners of the Winter School will be
+        announced soon.
       </p>
-
-      <div className="flex flex-wrap justify-center items-center gap-12">
-        <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-          <p className="font-semibold text-blue-900">
-            Università Telematica Internazionale UNINETTUNO
-          </p>
-        </div>
-
-        <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
-          <p className="font-semibold text-blue-900">
-            Domus Academy
-          </p>
-        </div>
-      </div>
     </div>
   </SectionWrapper>
 );
 
-
+/*----- VENUE -------- */
+/* ---------- VENUE ---------- */
 const VenueSection: React.FC = () => (
   <SectionWrapper title="Venue">
     <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
       <div className="text-center">
-        <p className="font-semibold">VILLAGGIO OLIMPICO BARDONECCHIA</p>
-        <p>Viale della Vittoria 46 – 10052 Bardonecchia (TO)</p>
+        <p className="font-semibold">DOMUS ACADEMY</p>
+
+        <p>Via Carlo Darwin, 20</p>
+
+        <p>20143 Milano MI, Italy</p>
+
         <p>
           <a
-            href="https://www.villaggiobardonecchia.it"
+            href="https://www.domusacademy.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 underline hover:text-blue-900"
           >
-            www.villaggiobardonecchia.it
+            www.domusacademy.com
           </a>
         </p>
       </div>
 
       <p>
-        The venue is in the <strong>Villaggio Olimpico Bardonecchia</strong>, and can be
-        reached with public transports as follows:
+        The Winter School will take place at <strong>Domus Academy</strong>,
+        an international institution located in Milan.
       </p>
 
-      <ol className="list-decimal list-outside ml-6 space-y-2">
-        <li>
-          arrive to the <strong>Torino Porta Nuova railway station</strong> in train or bus;
-        </li>
-        <li>
-          arrive to the <strong>Bardonecchia railway station</strong> in train (from the
-          Torino Porta Nuova railway station);
-        </li>
-        <li>
-          arrive to the <strong>Villaggio Olimpico Bardonecchia</strong> (from the
-          Bardonecchia railway station)
-        </li>
-      </ol>
+      <p>
+        The campus can be reached using Milan’s public transport network.
+        Further information about transportation and accommodation will be
+        provided soon.
+      </p>
 
-      <div>
-        <p className="font-semibold mt-8">
-          Arrive to the Torino Porta Nuova railway station:
-        </p>
-        <ul className="list-disc list-outside ml-6 space-y-2">
-          <li>
-            if you arrive in Torino by train, you should aim for the Torino Porta Nuova
-            railway station.
-          </li>
-          <li>
-            if you arrive by plane at the{" "}
-            <a
-              href="https://www.aeroportoditorino.it/en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              Torino Airport
-            </a>{" "}
-            there are buses going to the Torino Porta Nuova railway station in ~45 min (the
-            timetables are available{" "}
-            <a
-              href="https://torino.arriva.it/en/airport-line-torino-malpensa-airport/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              here
-            </a>
-            ).
-          </li>
-          <li>
-            if you arrive by plane at the{" "}
-            <a
-              href="https://www.milanomalpensa-airport.com/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              Milano Malpensa Airport
-            </a>{" "}
-            there are buses going to Torino Autostazione, in front of the Torino Porta Susa
-            railway station, in ~2 hours (the timetables are available{" "}
-            <a
-              href="https://torino.arriva.it/en/airport-line-torino-malpensa-airport/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              here
-            </a>
-            ). And then you can take the metro/subway in order to get to the Torino Porta Nuova railway
-            station: 3 stops in “Lingotto” direction from “Porta Susa” stop to “Porta Nuova” stop
-            (information about tickets available{" "}
-            <a
-              href="https://www.gtt.to.it/cms/en/fares"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              here
-            </a>
-            ).
-          </li>
-          <li>
-            If you arrive by plane at the{" "}
-            <a
-              href="https://www.milanolinate-airport.com/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              Milano Linate Airport
-            </a>{" "}
-            or at the{" "}
-            <a
-              href="https://www.milanbergamoairport.it/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              Milano Bergamo Airport
-            </a>{" "}
-            you should get by bus to the Milano Centrale railway station (timetables and
-            tickets available{" "}
-            <a
-              href="https://www.airportbusexpress.it/?lang=en-GB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              here
-            </a>
-            ), and then reach by train the Torino Porta Nuova railway station (there are trains
-            provided by{" "}
-            <a
-              href="https://www.trenitalia.com/en.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              Trenitalia
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://www.italotreno.it/en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              Italo
-            </a>
-            ).
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <p className="font-semibold mt-8">
-          Arrive to the Bardonecchia railway station:
-        </p>
-        <ul className="list-disc list-outside ml-6 space-y-2">
-          <li>
-            if you are at the Torino Porta Nuova railway station, you should take a train
-            going to Bardonecchia in ~1 hr 30 min (timetables are available{" "}
-            <a
-              href="https://www.trenitalia.com/en.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              here
-            </a>
-            ).
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <p className="font-semibold mt-8">
-          Arrive to the Villaggio Olimpico Bardonecchia:
-        </p>
-        <ul className="list-disc list-outside ml-6 space-y-2">
-          <li>
-            if you are at the Bardonecchia railway station, you can reach the Villaggio
-            Olimpico Bardonecchia in ~12 min by foot (~850 m), see the path{" "}
-            <a
-              href="https://www.google.com/maps/dir/Bardonecchia,+Bardonecchia,+TO/Villaggio+Olimpico,+Viale+della+Vittoria,+Bardonecchia+TO/@45.074663,6.7002626,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4789ec9235e3afeb:0xff6769dd8185fb9c!2m2!1d6.7098611!2d45.0763604!1m5!1m1!1s0x4789ecf2496d3377:0xa0af6595cf98ac2a!2m2!1d6.701289!2d45.0731627!3e2?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700 underline hover:text-blue-900"
-            >
-              here
-            </a>
-            .
-          </li>
-        </ul>
+      <div className="text-center">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Domus+Academy+Via+Carlo+Darwin+20+Milano"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 underline hover:text-blue-900"
+        >
+          View Domus Academy on Google Maps
+        </a>
       </div>
     </div>
   </SectionWrapper>
 );
-
 
 
 export default App;
