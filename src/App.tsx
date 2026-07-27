@@ -14,16 +14,25 @@ function App() {
     return hash || 'home';
   });
 
-  /* ---------- DATA ---------- */
+  /* ---------- DATA ---------- 
   const organizingCommittee: Member[] = [
     { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University, Italy' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
     { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
     { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },
-  ];
+  ];*/
 
-  const scientificCommittee: Member[] = [
+  const organizingCommittee: Member[] = [
+    {name: 'Dario Assante', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    {name: 'Pablo Buitron', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    {name: 'Clemente Cesarano', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    {name: 'Ileana Di Pomponio', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    {name: 'Linda Meleo', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    {name: 'Alessandro Pollini', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+];
+
+  const scientificCommittee: Member[] = [/*
     { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
     { name: 'Clemente Cesarano', affiliation: 'Uninettuno University' },
     { name: 'Alessandra De Rossi', affiliation: 'University of Turin, Italy' },
@@ -33,7 +42,7 @@ function App() {
     { name: 'Amir Noorizadegan', affiliation: 'Hong Kong Baptist University' },
     { name: 'Incoronata Notarangelo', affiliation: 'University of Turin, Italy' },
     { name: 'Giuseppe Rodriguez', affiliation: 'University of Cagliari, Italy' },
-    { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },
+    { name: 'Alvise Sommariva', affiliation: 'University of Padua, Italy' },*/
   ];
 
   const navItems = [
@@ -44,9 +53,10 @@ function App() {
     'Seminars',
     'Working Groups',
     'Posters',
-    'Program',
+    //'Program',
     'Registration',
-    'Important Dates',
+    //'Important Dates',
+    'Sponsors',
     'Venue',
   ];
 
@@ -80,12 +90,14 @@ function App() {
         return <WorkingGroupsSection scientificCommittee={scientificCommittee} />;
       case 'posters':
         return <PostersSection />;
-      case 'program':
-        return <ProgramSection />;
+      /*case 'program':
+        return <ProgramSection />;*/
       case 'registration':
         return <RegistrationSection />;
-      case 'important-dates':
-        return <ImportantDatesSection />;
+      /*case 'important-dates':
+        return <ImportantDatesSection />;*/
+      case 'sponsors':
+        return <SponsorsSection />;
       case 'venue':
         return <VenueSection />;
       default:
@@ -98,7 +110,7 @@ function App() {
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <h1 className="text-xl font-bold text-blue-900">AASM 2026</h1>
+            <h1 className="text-xl font-bold text-blue-900">Winter School 2027</h1>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 {navItems.map((item) => (
@@ -171,127 +183,84 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
 /* ---------- HOME ---------- */
 const HomeSection: React.FC = () => (
   <>
-    <section className="relative bg-gradient-to-br from-blue-800 via-blue-700 to-blue-600 text-white min-h-screen py-32 flex items-center">
+    <section className="relative bg-gradient-to-br from-blue-950 via-slate-900 to-blue-800 text-white min-h-screen py-28 flex items-center">
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
+
         <div className="flex-1 text-left space-y-8">
+          <p className="text-lg md:text-xl uppercase tracking-[0.25em] text-blue-200 font-medium">
+            Winter School
+          </p>
+
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            Alps Approximation <br /> School and Meeting
+            Computational Learning
+            <br />
+            and Design
           </h1>
-          <h2 className="text-3xl md:text-4xl font-light text-blue-100">
-            AASM 2026
-          </h2>
+
           <div className="text-xl md:text-2xl text-blue-100 space-y-2">
-            <p>June 1–5, 2026</p>
-            <p>Bardonecchia (TO), Italy</p>
+            <p>February 1–5, 2027</p>
+            <p>Domus Academy</p>
+            <p>Via Carlo Darwin, 20 — Milan, Italy</p>
           </div>
         </div>
 
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
-            src="./sito-foro.jpg"
-            alt="Bardonecchia landscape"
-            className="w-full max-w-2xl rounded-2xl shadow-2xl border border-blue-300 object-cover"
+            src="./design-mathematics.jpg"
+            alt="Computational design and mathematical structures"
+            className="w-full max-w-2xl rounded-2xl shadow-2xl border border-blue-300/40 object-cover aspect-[4/3]"
           />
         </div>
+
       </div>
     </section>
 
     <section className="relative z-10 bg-gray-50 py-20">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    {/* FUNDING & SPONSOR LOGOS */}
-    <div className="max-w-5xl mx-auto space-y-16">
+        <div className="max-w-5xl mx-auto space-y-16">
 
-      {/* Funded by */}
-      <div>
-        <p className="text-left mb-4">
-          <strong>Funded by:</strong>
-        </p>
+          <div>
+            <p className="text-left mb-6">
+              <strong>Organized by:</strong>
+            </p>
 
-        <div className="flex flex-wrap justify-start items-center gap-12">
+            <div className="flex flex-wrap justify-start items-center gap-12">
+              <img
+                src="./uninettuno-logo.png"
+                alt="Università Telematica Internazionale UNINETTUNO"
+                className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+              />
+            </div>
+          </div>
 
-          {/* Torino mate */}
-          <img
-            src="./torinologo.png"
-            alt="University of Turin Maths Department"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
-          />
+          <div>
+            <p className="text-left mb-6">
+              <strong>Hosted at:</strong>
+            </p>
 
-          {/* GNC INDAM */}
-          <img
-            src="./indam.jpeg"
-            alt="GNCS INDAM"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
-          />
+            <div className="flex flex-wrap justify-start items-center gap-12">
+              <img
+                src="./domus-academy-logo.png"
+                alt="Domus Academy"
+                className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+              />
+            </div>
+          </div>
 
-          {/* Uninettuno mate */}
-          <img
-            src="./uninetlogo.png"
-            alt="Uninettuno University Maths Department"
-            className="h-28 object-contain bg-white p-4 rounded-lg shadow"
-          />
+          <div>
+            <p className="text-left mb-6">
+              <strong>Sponsored by:</strong>
+            </p>
 
-        </div>
-      </div>
-
-      {/* Sponsored by */}
-      <div>
-        <p className="text-left mb-4">
-          <strong>Sponsored by:</strong>
-        </p>
-
-        <div className="flex flex-wrap justify-start items-center gap-12">
-
-          {/* Torino non mate */}
-          <img
-            src="./utorinologo.png"
-            alt="University of Turin"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
-          />
-
-          {/* Padova */}
-          <img
-            src="./Logo-DM.png"
-            alt="University of Padua"
-            className="h-38 object-contain bg-white p-4 rounded-lg shadow"
-          />
-
-          {/* Uninettuno non mate */}
-          <img
-            src="./uninettlogouniv.png"
-            alt="University Uninettuno"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
-          />
-
-          {/* Simai Sponsor */}
-          <img
-            src="./sponsor.jpeg"
-            alt="Simai sponsor"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
-          />
-
-          {/* ANA&A */}
-          <img
-            src="./annalogo.png"
-            alt="Gruppo di attivita AnA&A"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
-          />
-
-          {/* RITA */}
-          <img
-            src="./rita_logo.jpeg"
-            alt="Rete Italiana di Approssimazione"
-            className="h-40 object-contain bg-white p-4 rounded-lg shadow"
-          />
+            <p className="text-gray-600">
+              Sponsors will be announced soon.
+            </p>
+          </div>
 
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-
+    </section>
   </>
 );
 
@@ -1042,6 +1011,31 @@ const ImportantDatesSection: React.FC = () => (
   </SectionWrapper>
 );
 
+
+/* ---------- SPONSORS ---------- */
+const SponsorsSection: React.FC = () => (
+  <SectionWrapper title="Sponsors">
+    <div className="max-w-5xl mx-auto text-gray-800 text-base leading-relaxed space-y-8">
+      <p className="text-center">
+        Sponsors and institutional partners will be announced soon.
+      </p>
+
+      <div className="flex flex-wrap justify-center items-center gap-12">
+        <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+          <p className="font-semibold text-blue-900">
+            Università Telematica Internazionale UNINETTUNO
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+          <p className="font-semibold text-blue-900">
+            Domus Academy
+          </p>
+        </div>
+      </div>
+    </div>
+  </SectionWrapper>
+);
 
 
 const VenueSection: React.FC = () => (

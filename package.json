@@ -1,6 +1,6 @@
 {
-  "name": "vite-react-typescript-starter",
-  "homepage": "https://aasm2026.uninettunouniversity.net/",
+  "name": "winterschool",
+  "homepage": "https://pablobuitron.github.io/winterschool/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && echo 'aasm2026.uninettunouniversity.net' > dist/CNAME",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
