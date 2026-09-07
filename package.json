@@ -1,6 +1,6 @@
 {
   "name": "winterschool",
-  "homepage": "https://pablobuitron.github.io/winterschool/",
+  "homepage": "https://cldws2027.uninettunouniversity.net/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo 'cldws2026.uninettunouniversity.net' > dist/CNAME",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
