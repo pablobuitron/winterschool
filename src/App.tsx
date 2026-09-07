@@ -53,7 +53,7 @@ function App() {
     'Posters',
     'Program',
     'Registration',
-    //'Important Dates',
+    'Important Dates',
     'Sponsors',
     'Venue',
   ];
@@ -92,8 +92,8 @@ function App() {
         return <ProgramSection />;
       case 'registration':
         return <RegistrationSection />;
-      /*case 'important-dates':
-        return <ImportantDatesSection />;*/
+      case 'important-dates':
+        return <ImportantDatesSection />;
       case 'sponsors':
         return <SponsorsSection />;
       case 'venue':
@@ -1203,22 +1203,7 @@ const ImportantDatesSection: React.FC = () => (
   <SectionWrapper title="Important Dates">
     <ul className="list-none space-y-2">
         <li>
-          <strong>March 20, 2026:</strong> Deadline to contact the Working Group organizers to be included in a Working Group
-        </li>
-        <li>
-          <strong>March 20, 2026:</strong> Poster abstract submission deadline
-        </li>
-        <li>
-          <strong>March 31, 2026:</strong> Notification of poster acceptance
-        </li>
-        <li>
-          <strong>March 31, 2026:</strong> Deadline for submission of the Working Group participant list (to be provided by WG organizers)
-        </li>
-        <li>
-          <strong>April 15, 2026:</strong> Registration deadline
-        </li>
-        <li>
-          <strong>May 10, 2026:</strong> Payment deadline
+          TBA
         </li>
       </ul>
   </SectionWrapper>
