@@ -24,11 +24,11 @@ function App() {
   ];*/
 
   const organizingCommittee: Member[] = [
-    {name: 'Dario Assante', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-    {name: 'Pablo Buitron', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-    {name: 'Clemente Cesarano', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-    {name: 'Alessandro Pollini', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-];
+    { name: 'Dario Assante', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    { name: 'Pablo Buitron', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    { name: 'Clemente Cesarano', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    { name: 'Alessandro Pollini', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+  ];
 
   const scientificCommittee: Member[] = [/*
     { name: 'Roberto Cavoretto', affiliation: 'University of Turin, Italy' },
@@ -82,7 +82,7 @@ function App() {
         );
       case 'lecturers':
         return <LecturersSection />;
-        case 'seminars':
+      case 'seminars':
         return <SeminarsSection />;
       case 'working-groups':
         return <WorkingGroupsSection />;
@@ -115,11 +115,10 @@ function App() {
                   <button
                     key={item}
                     onClick={() => handleNavClick(item)}
-                    className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                      activeSection === item.toLowerCase().replace(/ /g, '-')
+                    className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${activeSection === item.toLowerCase().replace(/ /g, '-')
                         ? 'bg-slate-200 text-slate-950'
                         : 'text-gray-700 hover:bg-slate-100 hover:text-slate-950'
-                    }`}
+                      }`}
                   >
                     {item}
                   </button>
@@ -144,11 +143,10 @@ function App() {
                 <button
                   key={item}
                   onClick={() => handleNavClick(item)}
-                  className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-colors ${
-                    activeSection === item.toLowerCase().replace(/ /g, '-')
+                  className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-colors ${activeSection === item.toLowerCase().replace(/ /g, '-')
                       ? 'bg-blue-100 text-blue-900'
                       : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
-                  }`}
+                    }`}
                 >
                   {item}
                 </button>
