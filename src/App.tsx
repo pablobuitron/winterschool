@@ -193,9 +193,8 @@ const HomeSection: React.FC = () => (
           </p>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            Computational Learning
-            <br />
-            and Design
+            International Interdisciplinary Winter School on Computational Learning and Design
+             
           </h1>
 
           <div className="text-xl md:text-2xl text-blue-100 space-y-2">
