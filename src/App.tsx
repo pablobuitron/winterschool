@@ -189,15 +189,17 @@ const HomeSection: React.FC = () => (
 
         <div className="flex-1 text-left space-y-8">
           <p className="text-lg md:text-xl uppercase tracking-[0.25em] text-blue-200 font-medium">
-            Winter School
+            International Interdisciplinary Winter School on
           </p>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            International Interdisciplinary Winter School on Computational Learning and Design
-             
+            Computational Learning
+            <br />
+            and Design
           </h1>
 
           <div className="text-xl md:text-2xl text-blue-100 space-y-2">
+            <p>Practical Experiments and Industrial Cases</p>
             <p>February 1–5, 2027</p>
             <p>Domus Academy</p>
             <p>Via Carlo Darwin, 20 — Milan, Italy</p>
