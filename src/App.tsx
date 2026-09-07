@@ -108,7 +108,7 @@ function App() {
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <h1 className="text-xl font-bold text-slate-900 whitespace-nowrap">Winter School 2027</h1>
+            <h1 className="text-xl font-bold text-[#17172F] whitespace-nowrap">Winter School 2027</h1>
             <div className="hidden md:block">
               <div className="ml-8 flex items-baseline space-x-5">
                 {navItems.map((item) => (
@@ -116,8 +116,8 @@ function App() {
                     key={item}
                     onClick={() => handleNavClick(item)}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${activeSection === item.toLowerCase().replace(/ /g, '-')
-                        ? 'bg-slate-200 text-slate-950'
-                        : 'text-gray-700 hover:bg-slate-100 hover:text-slate-950'
+                        ? 'bg-[#F53A4B] text-white'
+                        : 'text-gray-700 hover:bg-gray-100 hover:text-[#F53A4B]'
                       }`}
                   >
                     {item}
@@ -128,7 +128,7 @@ function App() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 hover:text-slate-950"
+                className="text-gray-700 hover:text-[#17172F]"
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -144,8 +144,8 @@ function App() {
                   key={item}
                   onClick={() => handleNavClick(item)}
                   className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-colors ${activeSection === item.toLowerCase().replace(/ /g, '-')
-                      ? 'bg-blue-100 text-blue-900'
-                      : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'
+                      ? 'bg-[#F53A4B] text-white'
+                      : 'text-gray-700 hover:bg-gray-100 hover:text-[#F53A4B]'
                     }`}
                 >
                   {item}
@@ -167,7 +167,7 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
   children,
 }) => (
   <div>
-    <section className="bg-gradient-to-br from-blue-950 via-slate-900 to-blue-800 text-white py-20 text-center">
+    <section className="bg-[#666666] text-white py-20 text-center">
       <h2 className="text-4xl font-bold">{title}</h2>
     </section>
 
@@ -180,11 +180,11 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
 /* ---------- HOME ---------- */
 const HomeSection: React.FC = () => (
   <>
-    <section className="relative bg-gradient-to-br from-blue-950 via-slate-900 to-blue-800 text-white min-h-screen py-28 flex items-center">
+    <section className="relative bg-[#666666] text-white min-h-screen py-28 flex items-center">
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
 
         <div className="flex-1 text-left space-y-8">
-          <p className="text-lg md:text-xl uppercase tracking-[0.25em] text-blue-200 font-medium">
+          <p className="text-lg md:text-xl uppercase tracking-[0.25em] text-white font-medium">
             International Interdisciplinary Winter School on
           </p>
 
@@ -194,7 +194,7 @@ const HomeSection: React.FC = () => (
             and Design
           </h1>
 
-          <div className="text-xl md:text-2xl text-blue-100 space-y-2">
+          <div className="text-xl md:text-2xl text-white space-y-2">
             <p>Practical Experiments and Industrial Cases</p>
             <p>February 1–5, 2027</p>
             <p>Domus Academy</p>
@@ -206,14 +206,14 @@ const HomeSection: React.FC = () => (
           <img
             src="./arteprogramata.png"
             alt="Computational design and mathematical structures"
-            className="w-full max-w-2xl rounded-2xl shadow-2xl border border-blue-300/40 object-cover aspect-[1/1]"
+            className="w-full max-w-2xl rounded-2xl shadow-2xl border border-white/30 object-cover aspect-[1/1]"
           />
         </div>
 
       </div>
     </section>
 
-    <section className="relative z-10 bg-gray-50 py-20">
+    <section className="relative z-10 bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="max-w-5xl mx-auto space-y-16">
@@ -301,7 +301,7 @@ const AboutSection: React.FC = () => (
         <div className="text-gray-700 text-lg leading-relaxed space-y-6">
           <p>
             The{' '}
-            <strong className="text-blue-900">
+            <strong className="text-[#17172F]">
               Winter School on Computational Learning and Design
             </strong>{' '}
             will take place at <strong>Domus Academy</strong> in Milan, Italy,
@@ -327,7 +327,7 @@ const AboutSection: React.FC = () => (
             collaborations between academia, industry and the design community.
           </p>
 
-          <p className="font-medium text-blue-900">
+          <p className="font-medium text-[#17172F]">
             Further information about lecturers, activities, registration and
             the scientific programme will be announced soon.
           </p>
@@ -345,7 +345,7 @@ const CommitteesSection: React.FC<{
   <SectionWrapper title="Committees">
     <div className="max-w-3xl mx-auto space-y-10">
       <div>
-        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+        <h3 className="text-2xl font-semibold text-[#17172F] mb-4">
           Organizing Committee
         </h3>
 
@@ -360,7 +360,7 @@ const CommitteesSection: React.FC<{
 
       {scientificCommittee.length > 0 && (
         <div>
-          <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+          <h3 className="text-2xl font-semibold text-[#17172F] mb-4">
             Scientific Committee
           </h3>
 
@@ -1268,7 +1268,7 @@ const VenueSection: React.FC = () => (
             href="https://www.domusacademy.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-700 underline hover:text-blue-900"
+            className="text-blue-700 underline hover:text-[#17172F]"
           >
             www.domusacademy.com
           </a>
@@ -1291,7 +1291,7 @@ const VenueSection: React.FC = () => (
           href="https://www.google.com/maps/search/?api=1&query=Domus+Academy+Via+Carlo+Darwin+20+Milano"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-700 underline hover:text-blue-900"
+          className="text-blue-700 underline hover:text-[#17172F]"
         >
           View Domus Academy on Google Maps
         </a>
