@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && echo 'cldws2026.uninettunouniversity.net' > dist/CNAME",
+    "predeploy": "npm run build && echo 'cldws2027.uninettunouniversity.net' > dist/CNAME",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
