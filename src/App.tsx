@@ -393,8 +393,82 @@ const LecturersSection: React.FC = () => (
   <SectionWrapper title="Lecturers">
     <div className="max-w-4xl mx-auto text-gray-800 space-y-8">
       <p className="text-base leading-relaxed">
-        The lecturers and courses of the Winter School will be announced soon.
+        The three minicourses of 160 minutes each are:
       </p>
+      <div className="border-b border-gray-200 pb-8">
+        <p className="text-lg font-semibold">Prof. Claus-Christian Carbon</p>
+        <p className="text-base text-gray-600 mt-1">
+          Bamberg
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            Cognitive science and AI
+          </h3>
+        </div>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
+          </p>
+          <p className="text-base leading-relaxed mt-2 text-gray-700">
+            TBA.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <p className="text-lg font-semibold">Prof. Luig Laura</p>
+        <p className="text-base text-gray-600 mt-1">
+          Uninettuno
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            Algorithms and AI
+          </h3>
+        </div>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
+          </p>
+          <p className="text-base leading-relaxed mt-2 text-gray-700">
+            TBA
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <p className="text-lg font-semibold">Dr. Antonietta Grasso</p>
+        <p className="text-base text-gray-600 mt-1">
+          NAVER LAB
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            Socio-technical systems and AI
+          </h3>
+        </div>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
+          </p>
+          <p className="text-base leading-relaxed mt-2 text-gray-700">
+            TBA
+          </p>
+        </div>
+      </div>
     </div>
   </SectionWrapper>
 );
