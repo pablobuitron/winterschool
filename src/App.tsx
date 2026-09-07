@@ -1201,11 +1201,11 @@ const RegistrationSection: React.FC = () => (
 /* ---------- IMPORTANT DATES ---------- */
 const ImportantDatesSection: React.FC = () => (
   <SectionWrapper title="Important Dates">
-    <ul className="list-none space-y-2">
-        <li>
-          TBA
-        </li>
-      </ul>
+    <div className="max-w-4xl mx-auto text-gray-800 space-y-8">
+      <p className="text-base leading-relaxed">
+        TBA
+      </p>
+    </div>
   </SectionWrapper>
 );
 
