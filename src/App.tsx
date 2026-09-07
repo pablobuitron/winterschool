@@ -51,7 +51,7 @@ function App() {
     'Seminars',
     'Working Groups',
     'Posters',
-    //'Program',
+    'Program',
     'Registration',
     //'Important Dates',
     'Sponsors',
@@ -88,8 +88,8 @@ function App() {
         return <WorkingGroupsSection />;
       case 'posters':
         return <PostersSection />;
-      /*case 'program':
-        return <ProgramSection />;*/
+      case 'program':
+        return <ProgramSection />;
       case 'registration':
         return <RegistrationSection />;
       /*case 'important-dates':
@@ -513,227 +513,656 @@ const SeminarsSection: React.FC = () => (
 
 /* ---------- PROGRAM ---------- */
 const ProgramSection: React.FC = () => {
-  // Paleta (aprox. Excel + leyenda solicitada)
   const c = {
-    head: "bg-amber-100",           // cabecera superior
-    time: "bg-amber-50",            // columna de horas
-    gray: "bg-gray-200",            // bloques grises
-    coffee: "bg-white",             // coffee (borde visible)
-    mc1: "bg-[#cfe5ff]",            // azul claro MC-1
-    mc2: "bg-[#c8f27a]",            // verde MC-Perez
-    poster: "bg-orange-300",        // NUEVO: Posters naranja
-    wg: "bg-yellow-300",            // NUEVO: WG amarillo (leyenda)
-    s1: "bg-[#d8f3dc]",             // NUEVO: Seminar-1 verde pálido (leyenda)
-    s2: "bg-[#e6d4ff]",             // NUEVO: Seminar-2 violeta leve (leyenda)
-    dinner: "bg-white",
+    head: 'bg-amber-100',
+    time: 'bg-amber-50',
+    gray: 'bg-gray-100',
+    opening: 'bg-amber-100',
+    invited: 'bg-[#cfe0f8]',
+    industrial: 'bg-[#f4cccc]',
+    workingGroup: 'bg-[#d9ead3]',
+    lab: 'bg-[#d9ead3]',
+    studentLecture: 'bg-[#c9daf8]',
+    seminar: 'bg-[#fff2cc]',
+    conclusion: 'bg-[#d0e0e3]',
+    coffee: 'bg-white',
+    lunch: 'bg-white',
+    dinner: 'bg-white',
   };
 
   return (
     <SectionWrapper title="Program">
       <div className="max-w-7xl mx-auto">
+
+        <div className="mb-8">
+          <h3 className="text-2xl font-semibold text-gray-900">
+            International Interdisciplinary Winter School on Computational
+            Learning and Design
+          </h3>
+
+          <p className="text-lg italic text-gray-600 mt-2">
+            Practical Experiments and Industrial Cases
+          </p>
+        </div>
+
         {/* Tabla con scroll horizontal en pantallas pequeñas */}
         <div className="overflow-x-auto rounded-lg border border-gray-300">
-          <table className="min-w-[960px] w-full text-sm">
+          <table className="min-w-[1100px] w-full text-sm">
+
+            {/* ---------- HEADER ---------- */}
             <thead>
               <tr className="text-center text-gray-800">
-                <th className={`p-2 font-semibold ${c.head}`}>AASM 2026</th>
-                <th className={`p-2 font-semibold ${c.head}`}>Mon 1/6</th>
-                <th className={`p-2 font-semibold ${c.head}`}>Tue 2/6</th>
-                <th className={`p-2 font-semibold ${c.head}`}>Wed 3/6</th>
-                <th className={`p-2 font-semibold ${c.head}`}>Thu 4/6</th>
-                <th className={`p-2 font-semibold ${c.head}`}>Fri 5/6</th>
+                <th className={`p-3 font-semibold ${c.head}`}>
+                  Time
+                </th>
+
+                <th className={`p-3 font-semibold ${c.head}`}>
+                  Monday
+                  <div className="font-normal text-xs mt-1">
+                    01/02/2027
+                  </div>
+                </th>
+
+                <th className={`p-3 font-semibold ${c.head}`}>
+                  Tuesday
+                  <div className="font-normal text-xs mt-1">
+                    02/02/2027
+                  </div>
+                </th>
+
+                <th className={`p-3 font-semibold ${c.head}`}>
+                  Wednesday
+                  <div className="font-normal text-xs mt-1">
+                    03/02/2027
+                  </div>
+                </th>
+
+                <th className={`p-3 font-semibold ${c.head}`}>
+                  Thursday
+                  <div className="font-normal text-xs mt-1">
+                    04/02/2027
+                  </div>
+                </th>
+
+                <th className={`p-3 font-semibold ${c.head}`}>
+                  Friday
+                  <div className="font-normal text-xs mt-1">
+                    05/02/2027
+                  </div>
+                </th>
+              </tr>
+
+              <tr className="text-center text-gray-600">
+                <th className={`p-2 ${c.time}`}></th>
+                <th className="p-2 bg-white font-normal">Team</th>
+                <th className="p-2 bg-white font-normal">Team</th>
+                <th className="p-2 bg-white font-normal">Team</th>
+                <th className="p-2 bg-white font-normal">Team</th>
+                <th className="p-2 bg-white font-normal">Team</th>
               </tr>
             </thead>
 
-            <tbody className="[&>tr>td]:border [&>tr>td]:border-gray-300 text-center align-middle">
-              {/* ANTES DE LAS 9 NADA */}
-              <tr>
-                <td className={`w-32 p-1 font-medium ${c.time}`}>07:30-09:00</td>
-                <td className={c.gray}></td>
-                <td className="bg-white">Breakfast</td>
-                <td className="bg-white">Breakfast</td>
-                <td className="bg-white">Breakfast</td>
-                <td className="bg-white">Breakfast</td>
-              </tr>
+            <tbody className="[&>tr>td]:border [&>tr>td]:border-gray-300 align-middle">
 
-              {/* 09:00–10:30 */}
+              {/* ---------- 08:30 ---------- */}
               <tr>
-                <td className={`w-32 p-1 font-medium ${c.time}`}>09:00–10:30</td>
-                <td className={c.gray}></td>
-                <td className={c.mc1}>MC-Olver (2h)</td>
-                <td className={c.mc2}>MC-Perez (2h)</td>
-                <td className={c.mc1}>MC-Olver (2h)</td>
-                <td className={c.mc2}>MC-Perez (2h)</td>
-              </tr>
-
-              {/* 10:30–11:00 */}
-              <tr>
-                <td className={`p-1 ${c.time}`}>10:30–11:00</td>
-                <td className={c.gray}></td>
-                <td className={c.coffee}>Coffee Break</td>
-                <td className={c.coffee}>Coffee Break</td>
-                <td className={c.coffee}>Coffee Break</td>
-                <td className={c.coffee}>Coffee Break</td>
-              </tr>
-
-              {/* 11:00–12:30 */}
-              <tr>
-                <td className={`p-1 ${c.time}`}>11:00–12:30</td>
-                <td className={c.gray}></td>
-                <td className={c.mc2}>MC-Perez (2h)</td>
-                <td className={c.mc1}>MC-Olver (2h)</td>
-                <td className={c.mc2}>MC-Perez (2h)</td>
-                <td className={c.wg}>WG</td>
-              </tr>
-
-              {/* 12:30–12:45 */}
-              <tr>
-                <td className={`p-1 ${c.time}`}>12:30–12:45</td>
-                <td className={c.gray}></td>
-                <td className="bg-white">Photo</td>
-                <td className={c.gray}></td>
-                <td className={c.gray}></td>
-                <td className={c.gray}></td>
-              </tr>
-
-              {/* 12:45–14:00 */}
-              <tr>
-                <td className={`p-1 ${c.time}`}>12:45</td>
-                <td className={c.gray}></td>
-                <td className="bg-white">Lunch</td>
-                <td className="bg-white">Lunch</td>
-                <td className="bg-white">Lunch</td>
-                <td className="bg-white">Lunch</td>
-              </tr>
-
-              {/* 14:00–14:15  — INICIO del rowSpan para MIÉRCOLES */}
-              <tr>
-                <td className={`p-1 ${c.time}`}>13:15–14:15</td>
-                <td className="bg-white">Registration</td>
-                <td className={c.gray}></td>
-                {/* Wed: celda combinada para 7 filas (14:00 → 19:00) */}
-                <td rowSpan={7} className="bg-white align-middle font-medium">
-                  Excursion / Free time
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  08:30
                 </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 font-medium ${c.opening}`}>
+                  Welcome and Launch
+                  <br />
+                  Introduction and presentation of the Winter School
+                </td>
+
+                <td className={c.gray}></td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
 
-              {/* 14:15–15:45 */}
+              {/* ---------- 09:00–09:40 ---------- */}
               <tr>
-                <td className={`p-1 ${c.time}`}>14:15–15:45</td>
-                <td className={c.mc1}>MC-Olver (2h)</td>
-                <td className={c.wg}>WG</td>
-                {/* (omitimos Wed por rowSpan) */}
-                <td className={c.wg}>WG</td>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  09:00–09:40
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 01
+                  <br />
+                  Computational Learning and Design
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 03
+                  <br />
+                  Strategies for machine adaptation
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 02
+                  <br />
+                  Dynamic systems: from equal differentials to logics
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 01
+                  <br />
+                  Computational Learning and Design
+                </td>
+              </tr>
+
+              {/* ---------- 09:40–10:20 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  09:40–10:20
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 02
+                  <br />
+                  Dynamic systems: from equal differentials to logics
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 01
+                  <br />
+                  Computational Learning and Design
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 01
+                  <br />
+                  Computational Learning and Design
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 02
+                  <br />
+                  Dynamic systems: from equal differentials to logics
+                </td>
+              </tr>
+
+              {/* ---------- 10:20–10:40 ---------- */}
+              <tr>
+                <td className={`p-2 text-center ${c.time}`}>
+                  10:20–10:40
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 text-center ${c.coffee}`}>
+                  Coffee
+                </td>
+
+                <td className={`p-3 text-center ${c.coffee}`}>
+                  Coffee
+                </td>
+
+                <td className={`p-3 text-center ${c.coffee}`}>
+                  Coffee
+                </td>
+
+                <td className={`p-3 text-center ${c.coffee}`}>
+                  Coffee
+                </td>
+              </tr>
+
+              {/* ---------- 10:30–11:20 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  10:30–11:20
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 03
+                  <br />
+                  Strategies for machine adaptation
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 02
+                  <br />
+                  Dynamic systems: from equal differentials to logics
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 03
+                  <br />
+                  Strategies for machine adaptation
+                </td>
+
+                <td className={`p-3 font-medium ${c.invited}`}>
+                  Invited Lecture 03
+                  <br />
+                  Strategies for machine adaptation
+                </td>
+              </tr>
+
+              {/* ---------- 11:20–12:10 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  11:20–12:10
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 ${c.industrial}`}>
+                  Invited Lecture – Industrial Case 1
+                </td>
+
+                <td className={`p-3 ${c.industrial}`}>
+                  Invited Lecture – Industrial Case 3
+                </td>
+
+                <td className={`p-3 ${c.industrial}`}>
+                  Invited Lecture – Industrial Case 5
+                </td>
+
+                <td
+                  rowSpan={2}
+                  className={`p-3 font-medium align-middle ${c.workingGroup}`}
+                >
+                  Working Groups
+                </td>
+              </tr>
+
+              {/* ---------- 12:10–12:40 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  12:10–12:40
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 ${c.industrial}`}>
+                  Invited Lecture – Industrial Case 2
+                </td>
+
+                <td className={`p-3 ${c.industrial}`}>
+                  Invited Lecture – Industrial Case 4
+                </td>
+
+                <td className={`p-3 ${c.industrial}`}>
+                  Invited Lecture – Industrial Case 6
+                </td>
+              </tr>
+
+              {/* ---------- Closing ---------- */}
+              <tr>
+                <td className={`p-2 text-center ${c.time}`}></td>
+
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+
+                <td className={`p-3 ${c.workingGroup}`}>
+                  Closing and next steps
+                </td>
+              </tr>
+
+              {/* ---------- 13:00 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  13:00
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 text-center ${c.lunch}`}>
+                  Lunch
+                </td>
+
+                <td className={`p-3 text-center ${c.lunch}`}>
+                  Lunch
+                </td>
+
+                <td className={`p-3 text-center ${c.lunch}`}>
+                  Lunch
+                </td>
+
                 <td className={c.gray}></td>
               </tr>
 
-              {/* 15:45–16:15 */}
+              {/* ---------- 13:30 ---------- */}
               <tr>
-                <td className={`p-1 ${c.time}`}>15:45–16:15</td>
-                <td className={c.coffee}>Coffee Break</td>
-                <td className={c.coffee}>Coffee Break</td>
-                {/* (omitimos Wed por rowSpan) */}
-                <td className={c.coffee}>Coffee Break</td>
-                <td className={c.gray}></td>
-              </tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  13:30
+                </td>
 
-              {/* 16:15–17:15 */}
-              <tr>
-                <td className={`p-1 ${c.time}`}>16:15–17:15</td>
-                <td className={c.s1}>Seminar-Dmytryshyn</td>
-                <td className={c.poster}>Poster Session</td>
-                {/* (omitimos Wed por rowSpan) */}
-                <td className={c.s2}>Seminar-Themistoclakis</td>
-                <td className={c.gray}></td>
-              </tr>
+                <td className={`p-3 font-medium ${c.seminar}`}>
+                  Welcome to the Students&apos; Seminar – Pre-Winter School
+                </td>
 
-              {/* 17:15–17:30 */}
-              <tr>
-                <td className={`p-1 ${c.time}`}>17:15–17:30</td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
-                {/* (omitimos Wed por rowSpan) */}
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
 
-              {/* 17:30–18:45 */}
+              {/* ---------- 14:00 ---------- */}
               <tr>
-                <td className={`p-1 ${c.time}`}>17:30–18:45</td>
-                <td className="bg-white">Welcome Drink</td>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  14:00
+                </td>
+
+                <td className={`p-3 ${c.seminar}`}>
+                  Introduction and presentation of the seminar
+                </td>
+
                 <td className={c.gray}></td>
-                {/* (omitimos Wed por rowSpan) */}
+                <td className={c.gray}></td>
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
 
-              {/* 18:45–19:00 */}
+              {/* ---------- 14:30 ---------- */}
               <tr>
-                <td className={`p-1 ${c.time}`}>18:45–19:30</td>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  14:30
+                </td>
+
+                <td className={`p-3 font-medium ${c.studentLecture}`}>
+                  Lecture – PhD student 1
+                </td>
+
+                <td
+                  rowSpan={2}
+                  className={`p-3 font-medium align-middle ${c.lab}`}
+                >
+                  Lab 1 – Hands-on experiments:
+                  <br />
+                  Group discussion on industrial cases
+                </td>
+
+                <td
+                  rowSpan={2}
+                  className={`p-3 font-medium align-middle ${c.lab}`}
+                >
+                  Lab 3 – Hands-on experiments:
+                  <br />
+                  Group discussion on industrial cases
+                </td>
+
+                <td
+                  rowSpan={2}
+                  className={`p-3 font-medium align-middle ${c.lab}`}
+                >
+                  Lab 5 – Hands-on experiments:
+                  <br />
+                  Group discussion on industrial cases
+                </td>
+
                 <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 15:00 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  15:00
+                </td>
+
+                <td className={`p-3 font-medium ${c.studentLecture}`}>
+                  Lecture – PhD student 2
+                </td>
+
                 <td className={c.gray}></td>
-                {/* (omitimos Wed por rowSpan) */}
+              </tr>
+
+              {/* ---------- 15:30 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  15:30
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td
+                  rowSpan={3}
+                  className={`p-3 font-medium align-middle ${c.workingGroup}`}
+                >
+                  Working Groups
+                </td>
+
+                <td
+                  rowSpan={3}
+                  className={`p-3 font-medium align-middle ${c.workingGroup}`}
+                >
+                  Working Groups
+                </td>
+
+                <td
+                  rowSpan={3}
+                  className={`p-3 font-medium align-middle ${c.workingGroup}`}
+                >
+                  Working Groups
+                </td>
+
+                <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 16:00 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  16:00
+                </td>
+
+                <td className={`p-3 font-medium ${c.studentLecture}`}>
+                  Lecture – PhD student 3
+                </td>
+
+                <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 16:30 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  16:30
+                </td>
+
+                <td className={`p-3 font-medium ${c.studentLecture}`}>
+                  Lecture – PhD student 4
+                </td>
+
+                <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 17:00 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  17:00
+                </td>
+
+                <td className={c.gray}></td>
+
+                <td className={`p-3 text-center ${c.coffee}`}>
+                  Coffee
+                </td>
+
+                <td className={`p-3 text-center ${c.coffee}`}>
+                  Coffee
+                </td>
+
+                <td className={`p-3 text-center ${c.coffee}`}>
+                  Coffee
+                </td>
+
+                <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 17:30 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  17:30
+                </td>
+
+                <td className={`p-3 ${c.conclusion}`}>
+                  Conclusion
+                </td>
+
+                <td
+                  rowSpan={2}
+                  className={`p-3 font-medium align-middle ${c.lab}`}
+                >
+                  Lab 2 – Hands-on experiments:
+                  <br />
+                  Group discussion on industrial cases
+                </td>
+
+                <td
+                  rowSpan={2}
+                  className={`p-3 font-medium align-middle ${c.lab}`}
+                >
+                  Lab 4 – Hands-on experiments:
+                  <br />
+                  Group discussion on industrial cases
+                </td>
+
+                <td
+                  rowSpan={2}
+                  className={`p-3 font-medium align-middle ${c.lab}`}
+                >
+                  Lab 6 – Hands-on experiments:
+                  <br />
+                  Group discussion on industrial cases
+                </td>
+
+                <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 18:00 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  18:00
+                </td>
+
                 <td className={c.gray}></td>
                 <td className={c.gray}></td>
               </tr>
 
-              {/* 19:30 */}
+              {/* ---------- 18:30 ---------- */}
               <tr>
-                <td className={`p-1 ${c.time}`}>19:30</td>
-                <td className={c.dinner}>Dinner</td>
-                <td className={c.dinner}>Dinner</td>
-                <td className={c.dinner}>Social Dinner</td>
-                <td className={c.dinner}>Dinner</td>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  18:30
+                </td>
+
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 19:00 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  19:00
+                </td>
+
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 19:30 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  19:30
+                </td>
+
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+              </tr>
+
+              {/* ---------- 20:00 ---------- */}
+              <tr>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
+                  20:00
+                </td>
+
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+                <td className={c.gray}></td>
+
+                <td className={`p-3 text-center font-medium ${c.dinner}`}>
+                  Social Dinner
+                </td>
+
                 <td className={c.gray}></td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p>
-          MC = Mini Course
-        </p>
-        <p>
-          WG = Working Groups
-        </p>
 
-        {/* Leyenda de colores */}
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-20 rounded ${c.mc1}`} />
-            <span>MC-Olver</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-24 rounded ${c.mc2}`} />
-            <span>MC-Perez</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-28 rounded ${c.poster}`} />
-            <span>Posters</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-20 rounded ${c.wg}`} />
-            <span>WG</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-28 rounded ${c.s1}`} />
-            <span>Seminar-Dmytryshyn</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-28 rounded ${c.s2}`} />
-            <span>Seminar-Themistoclakis</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className={`inline-block h-5 w-20 rounded ${c.gray}`} />
-            <span>Free time</span>
+        {/* ---------- LEGEND ---------- */}
+        <div className="mt-8">
+          <h3 className="text-lg font-semibold mb-4">
+            Legend
+          </h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+            <div className="flex items-center gap-2">
+              <span
+                className={`inline-block h-5 w-12 rounded ${c.opening}`}
+              />
+              <span>Opening / Seminar</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span
+                className={`inline-block h-5 w-12 rounded ${c.invited}`}
+              />
+              <span>Invited Lectures</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span
+                className={`inline-block h-5 w-12 rounded ${c.industrial}`}
+              />
+              <span>Industrial Cases</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span
+                className={`inline-block h-5 w-12 rounded ${c.workingGroup}`}
+              />
+              <span>Working Groups / Labs</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span
+                className={`inline-block h-5 w-12 rounded ${c.studentLecture}`}
+              />
+              <span>PhD Student Lectures</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span
+                className={`inline-block h-5 w-12 rounded ${c.conclusion}`}
+              />
+              <span>Conclusion</span>
+            </div>
           </div>
         </div>
       </div>
     </SectionWrapper>
   );
 };
-
 
 
 
