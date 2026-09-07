@@ -27,8 +27,6 @@ function App() {
     {name: 'Dario Assante', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
     {name: 'Pablo Buitron', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
     {name: 'Clemente Cesarano', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-    {name: 'Ileana Di Pomponio', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-    {name: 'Linda Meleo', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
     {name: 'Alessandro Pollini', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
 ];
 
