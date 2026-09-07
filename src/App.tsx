@@ -226,11 +226,35 @@ const HomeSection: React.FC = () => (
             </p>
 
             <div className="flex flex-wrap justify-start items-center gap-12">
-              <img
-                src="./uninettuno-logo.png"
-                alt="Università Telematica Internazionale UNINETTUNO"
-                className="h-32 object-contain bg-white p-4 rounded-lg shadow"
-              />
+
+              {/* UNINETTUNO */}
+              <a
+                href="https://www.uninettunouniversity.net/it/default.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./uninettuno-logo.png"
+                  alt="Università Telematica Internazionale UNINETTUNO"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
+
+              {/* Computational Learning and Design */}
+              <a
+                href="https://sites.google.com/uninettunouniversity.net/cld"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./CLDLOGO.png"
+                  alt="Computational Learning and Design"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
+
             </div>
           </div>
 
@@ -240,11 +264,18 @@ const HomeSection: React.FC = () => (
             </p>
 
             <div className="flex flex-wrap justify-start items-center gap-12">
-              <img
-                src="./domus-academy-logo.png"
-                alt="Domus Academy"
-                className="h-30 object-contain bg-white p-4 rounded-lg shadow"
-              />
+              <a
+                href="https://www.domusacademy.com/it/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./domus-academy-logo.png"
+                  alt="Domus Academy"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
             </div>
           </div>
 
