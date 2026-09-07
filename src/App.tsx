@@ -403,10 +403,37 @@ const LecturersSection: React.FC = () => (
 const SeminarsSection: React.FC = () => (
   <SectionWrapper title="Seminars">
     <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
-      <p className="text-base leading-relaxed">
-        Information about the seminars and invited speakers will be announced
-        soon.
-      </p>
+      <div className="border-b border-gray-200 pb-4">
+        <p className="text-lg font-semibold">Dott. Simone Pozzi</p>
+        <p className="text-base text-gray-600 mt-1">
+          DeepBlue
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            AI and transport
+          </h3>
+        </div>
+      </div>
+
+      <div>
+        <p className="text-lg font-semibold">Dott. Carlo Consoli</p>
+        <p className="text-base text-gray-600 mt-1">
+          DOS design
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            AI and functional decomposition
+          </h3>
+        </div>
+      </div>
     </div>
   </SectionWrapper>
 );
