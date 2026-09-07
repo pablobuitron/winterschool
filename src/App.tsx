@@ -203,11 +203,23 @@ const HomeSection: React.FC = () => (
         </div>
 
         <div className="flex-1 flex justify-center lg:justify-end">
-          <img
-            src="./arteprogramata.png"
-            alt="Computational design and mathematical structures"
-            className="w-full max-w-2xl rounded-2xl shadow-2xl border border-white/30 object-cover aspect-[1/1]"
-          />
+          <div className="relative w-full max-w-2xl">
+            <img
+              src="./arteprogramata.png"
+              alt="Arte programmata. 25 riquadri in bianco e nero"
+              className="w-full rounded-2xl shadow-2xl border border-white/30 object-cover aspect-[1/1]"
+            />
+
+            <div className="absolute bottom-3 right-3 max-w-[85%] rounded-lg bg-black/65 px-4 py-3 text-right text-xs md:text-sm leading-relaxed text-white backdrop-blur-sm">
+              <span className="font-semibold italic">
+                Arte programmata. 25 riquadri in bianco e nero.
+              </span>
+              <br />
+              <span className="text-white/85">
+                (E. Mari, for the catalogue of the exhibition <em>Arte Programmata</em> in Düsseldorf, 1963, image from MoMA)
+              </span>
+            </div>
+          </div>
         </div>
 
       </div>
