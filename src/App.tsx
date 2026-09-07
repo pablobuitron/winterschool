@@ -206,7 +206,7 @@ const HomeSection: React.FC = () => (
 
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
-            src="./design-mathematics.jpg"
+            src="./arteprogramata.png"
             alt="Computational design and mathematical structures"
             className="w-full max-w-2xl rounded-2xl shadow-2xl border border-blue-300/40 object-cover aspect-[4/3]"
           />
