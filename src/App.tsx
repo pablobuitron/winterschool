@@ -208,7 +208,7 @@ const HomeSection: React.FC = () => (
           <img
             src="./arteprogramata.png"
             alt="Computational design and mathematical structures"
-            className="w-full max-w-2xl rounded-2xl shadow-2xl border border-blue-300/40 object-cover aspect-[16/9]"
+            className="w-full max-w-2xl rounded-2xl shadow-2xl border border-blue-300/40 object-cover aspect-[3/2]"
           />
         </div>
 
