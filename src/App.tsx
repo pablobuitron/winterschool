@@ -258,6 +258,44 @@ const HomeSection: React.FC = () => (
 
           <div>
             <p className="text-left mb-6">
+              <strong>Within:</strong>
+            </p>
+
+            <div className="flex flex-wrap justify-start items-center gap-12">
+
+              {/* EIT HEI */}
+              <a
+                href="https://eit-hei.eu/funded-projects/explorer/impact-campus/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./eitlogo.png"
+                  alt="EIT HEI"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
+
+              {/* IMPACT Campus */}
+              <a
+                href="https://www.impact-campus.info/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./impactcampuslogo.png"
+                  alt="IMPACT Campus"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
+
+            </div>
+          </div>
+
+          <div>
+            <p className="text-left mb-6">
               <strong>Hosted at:</strong>
             </p>
 
