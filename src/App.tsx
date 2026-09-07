@@ -243,7 +243,7 @@ const HomeSection: React.FC = () => (
               <img
                 src="./domus-academy-logo.png"
                 alt="Domus Academy"
-                className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                className="h-30 object-contain bg-white p-4 rounded-lg shadow"
               />
             </div>
           </div>
