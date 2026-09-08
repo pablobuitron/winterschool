@@ -474,7 +474,7 @@ const LecturersSection: React.FC = () => (
         The three minicourses of 160 minutes each are:
       </p>
       <div className="border-b border-gray-200 pb-8">
-        <p className="text-lg font-semibold">Prof. Claus-Christian Carbon</p>
+        <p className="text-lg font-semibold">Claus-Christian Carbon</p>
         <p className="text-base text-gray-600 mt-1">
           Bamberg
         </p>
@@ -499,7 +499,7 @@ const LecturersSection: React.FC = () => (
       </div>
 
       <div>
-        <p className="text-lg font-semibold">Prof. Luig Laura</p>
+        <p className="text-lg font-semibold">uig Laura</p>
         <p className="text-base text-gray-600 mt-1">
           Uninettuno
         </p>
@@ -524,7 +524,7 @@ const LecturersSection: React.FC = () => (
       </div>
 
       <div>
-        <p className="text-lg font-semibold">Dr. Antonietta Grasso</p>
+        <p className="text-lg font-semibold">Antonietta Grasso</p>
         <p className="text-base text-gray-600 mt-1">
           NAVER LAB
         </p>
@@ -556,7 +556,7 @@ const SeminarsSection: React.FC = () => (
   <SectionWrapper title="Seminars">
     <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
       <div className="border-b border-gray-200 pb-4">
-        <p className="text-lg font-semibold">Dott. Simone Pozzi</p>
+        <p className="text-lg font-semibold">Simone Pozzi</p>
         <p className="text-base text-gray-600 mt-1">
           DeepBlue
         </p>
@@ -572,7 +572,7 @@ const SeminarsSection: React.FC = () => (
       </div>
 
       <div>
-        <p className="text-lg font-semibold">Dott. Carlo Consoli</p>
+        <p className="text-lg font-semibold">Carlo Consoli</p>
         <p className="text-base text-gray-600 mt-1">
           DOS design
         </p>
