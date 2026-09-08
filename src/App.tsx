@@ -499,7 +499,7 @@ const LecturersSection: React.FC = () => (
       </div>
 
       <div>
-        <p className="text-lg font-semibold">uig Laura</p>
+        <p className="text-lg font-semibold">Luig Laura</p>
         <p className="text-base text-gray-600 mt-1">
           Uninettuno
         </p>
