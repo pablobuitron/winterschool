@@ -770,7 +770,7 @@ const ProgramSection: React.FC = () => {
 
               {/* ---------- 10:20–10:40 ---------- */}
               <tr>
-                <td className={`p-2 text-center ${c.time}`}>
+                <td className={`p-2 text-center font-medium ${c.time}`}>
                   10:20–10:40
                 </td>
 
@@ -834,16 +834,16 @@ const ProgramSection: React.FC = () => {
 
                 <td className={c.gray}></td>
 
-                <td className={`p-3 ${c.industrial}`}>
-                  Invited Lecture – Industrial Case 1
+                <td className={`p-3 font-medium ${c.industrial}`}>
+                  Seminar 1
                 </td>
 
-                <td className={`p-3 ${c.industrial}`}>
-                  Invited Lecture – Industrial Case 3
+                <td className={`p-3 font-medium ${c.industrial}`}>
+                  Seminar 3
                 </td>
 
-                <td className={`p-3 ${c.industrial}`}>
-                  Invited Lecture – Industrial Case 5
+                <td className={`p-3 font-medium ${c.industrial}`}>
+                  Seminar 5
                 </td>
 
                 <td
@@ -862,16 +862,16 @@ const ProgramSection: React.FC = () => {
 
                 <td className={c.gray}></td>
 
-                <td className={`p-3 ${c.industrial}`}>
-                  Invited Lecture – Industrial Case 2
+                <td className={`p-3 font-medium ${c.industrial}`}>
+                  Seminar 2
                 </td>
 
-                <td className={`p-3 ${c.industrial}`}>
-                  Invited Lecture – Industrial Case 4
+                <td className={`p-3 font-medium ${c.industrial}`}>
+                  Seminar 4
                 </td>
 
-                <td className={`p-3 ${c.industrial}`}>
-                  Invited Lecture – Industrial Case 6
+                <td className={`p-3 font-medium ${c.industrial}`}>
+                  Seminar 6
                 </td>
               </tr>
 
