@@ -469,82 +469,58 @@ const PostersSection: React.FC = () => (
 /* ---------- LECTURERS ---------- */
 const LecturersSection: React.FC = () => (
   <SectionWrapper title="Lecturers">
-    <div className="max-w-4xl mx-auto text-gray-800 space-y-8">
-      <p className="text-base leading-relaxed">
+    <div className="max-w-6xl mx-auto text-gray-800">
+      <p className="text-base leading-relaxed mb-8">
         The three minicourses of 160 minutes each are:
       </p>
-      <div className="border-b border-gray-200 pb-8">
-        <p className="text-lg font-semibold">Claus-Christian Carbon</p>
-        <p className="text-base text-gray-600 mt-1">
-          Bamberg
-        </p>
 
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
+          <p className="text-lg font-semibold">Claus-Christian Carbon</p>
+          <p className="text-base text-gray-600 mt-1">
+            Bamberg
           </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            Cognitive science and AI
-          </h3>
+
+          <div className="mt-4">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+              Title
+            </p>
+            <h3 className="text-lg font-semibold leading-snug mt-1">
+              Cognitive science and AI
+            </h3>
+          </div>
         </div>
 
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Abstract
+        <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
+          <p className="text-lg font-semibold">Luig Laura</p>
+          <p className="text-base text-gray-600 mt-1">
+            Uninettuno
           </p>
-          <p className="text-base leading-relaxed mt-2 text-gray-700">
-            TBA.
-          </p>
-        </div>
-      </div>
 
-      <div>
-        <p className="text-lg font-semibold">Luig Laura</p>
-        <p className="text-base text-gray-600 mt-1">
-          Uninettuno
-        </p>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
-          </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            Algorithms and AI
-          </h3>
+          <div className="mt-4">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+              Title
+            </p>
+            <h3 className="text-lg font-semibold leading-snug mt-1">
+              Algorithms and AI
+            </h3>
+          </div>
         </div>
 
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Abstract
+        <div>
+          <p className="text-lg font-semibold">Antonietta Grasso</p>
+          <p className="text-base text-gray-600 mt-1">
+            NAVER LAB
           </p>
-          <p className="text-base leading-relaxed mt-2 text-gray-700">
-            TBA
-          </p>
-        </div>
-      </div>
 
-      <div>
-        <p className="text-lg font-semibold">Antonietta Grasso</p>
-        <p className="text-base text-gray-600 mt-1">
-          NAVER LAB
-        </p>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
-          </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            Socio-technical systems and AI
-          </h3>
-        </div>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Abstract
-          </p>
-          <p className="text-base leading-relaxed mt-2 text-gray-700">
-            TBA
-          </p>
+          <div className="mt-4">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+              Title
+            </p>
+            <h3 className="text-lg font-semibold leading-snug mt-1">
+              Socio-technical systems and AI
+            </h3>
+          </div>
         </div>
       </div>
     </div>
@@ -554,42 +530,43 @@ const LecturersSection: React.FC = () => (
 /* ---------- SEMINARS ---------- */
 const SeminarsSection: React.FC = () => (
   <SectionWrapper title="Seminars">
-    <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
-      <div className="border-b border-gray-200 pb-4">
-        <p className="text-lg font-semibold">Simone Pozzi</p>
-        <p className="text-base text-gray-600 mt-1">
-          DeepBlue
-        </p>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
+    <div className="max-w-5xl mx-auto text-gray-800">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
+          <p className="text-lg font-semibold">Simone Pozzi</p>
+          <p className="text-base text-gray-600 mt-1">
+            DeepBlue
           </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            AI and transport
-          </h3>
+
+          <div className="mt-4">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+              Title
+            </p>
+            <h3 className="text-lg font-semibold leading-snug mt-1">
+              AI and transport
+            </h3>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <p className="text-lg font-semibold">Carlo Consoli</p>
-        <p className="text-base text-gray-600 mt-1">
-          DOS design
-        </p>
-
-        <div className="mt-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-            Title
+        <div>
+          <p className="text-lg font-semibold">Carlo Consoli</p>
+          <p className="text-base text-gray-600 mt-1">
+            DOS design
           </p>
-          <h3 className="text-lg font-semibold leading-snug mt-1">
-            AI and functional decomposition
-          </h3>
+
+          <div className="mt-4">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+              Title
+            </p>
+            <h3 className="text-lg font-semibold leading-snug mt-1">
+              AI and functional decomposition
+            </h3>
+          </div>
         </div>
       </div>
     </div>
   </SectionWrapper>
 );
-
 /* ---------- PROGRAM ---------- */
 const ProgramSection: React.FC = () => {
   const c = {
