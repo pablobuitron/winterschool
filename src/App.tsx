@@ -167,7 +167,7 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
   children,
 }) => (
   <div>
-    <section className="bg-[#666666] text-white py-20 text-center">
+    <section className="bg-[#666666] text-[#17172F] py-20 text-center">
       <h2 className="text-4xl font-bold">{title}</h2>
     </section>
 
@@ -180,11 +180,11 @@ const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = (
 /* ---------- HOME ---------- */
 const HomeSection: React.FC = () => (
   <>
-    <section className="relative bg-[#666666] text-white min-h-screen py-28 flex items-center">
+    <section className="relative bg-[#666666] text-[#17172F] min-h-screen py-28 flex items-center">
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
 
         <div className="flex-1 text-left space-y-8">
-          <p className="text-lg md:text-xl uppercase tracking-[0.25em] text-white font-medium">
+          <p className="text-lg md:text-xl uppercase tracking-[0.25em] text-[#17172F] font-medium">
             International Interdisciplinary Winter School on
           </p>
 
@@ -194,7 +194,7 @@ const HomeSection: React.FC = () => (
             and Design
           </h1>
 
-          <div className="text-xl md:text-2xl text-white space-y-2">
+          <div className="text-xl md:text-2xl text-[#17172F] space-y-2">
             <p>Practical Experiments and Industrial Cases</p>
             <p>February 1–5, 2027</p>
             <p>Domus Academy</p>

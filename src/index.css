@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------- Global font configuration (uniform) ---------- */
 body {
-  @apply font-sans text-gray-800 bg-white leading-relaxed;
-} 
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #17172F;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button,
+nav {
+  font-family: Georgia, 'Times New Roman', serif;
+}
