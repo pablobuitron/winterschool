@@ -106,11 +106,11 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <nav className="bg-white shadow-lg sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-none mx-auto px-4 sm:px-5 lg:px-6">
           <div className="flex justify-between items-center h-16">
             <h1 className="text-xl font-bold text-[#17172F] whitespace-nowrap">Winter School 2027</h1>
             <div className="hidden md:block">
-              <div className="ml-8 flex items-baseline space-x-5">
+              <div className="ml-4 flex items-baseline space-x-4">
                 {navItems.map((item) => (
                   <button
                     key={item}
