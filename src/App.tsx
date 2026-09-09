@@ -694,25 +694,25 @@ const ProgramSection: React.FC = () => {
                 <td className={c.gray}></td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 01
+                  MC 01
                   <br />
                   Computational Learning and Design
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 03
+                  MC 03
                   <br />
                   Strategies for machine adaptation
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 02
+                  MC 02
                   <br />
                   Dynamic systems: from equal differentials to logics
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 01
+                  MC 01
                   <br />
                   Computational Learning and Design
                 </td>
@@ -727,25 +727,25 @@ const ProgramSection: React.FC = () => {
                 <td className={c.gray}></td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 02
+                  MC 02
                   <br />
                   Dynamic systems: from equal differentials to logics
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 01
+                  MC 01
                   <br />
                   Computational Learning and Design
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 01
+                  MC 01
                   <br />
                   Computational Learning and Design
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 02
+                  MC 02
                   <br />
                   Dynamic systems: from equal differentials to logics
                 </td>
@@ -785,25 +785,25 @@ const ProgramSection: React.FC = () => {
                 <td className={c.gray}></td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 03
+                  MC 03
                   <br />
                   Strategies for machine adaptation
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 02
+                  MC 02
                   <br />
                   Dynamic systems: from equal differentials to logics
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 03
+                  MC 03
                   <br />
                   Strategies for machine adaptation
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  Invited Lecture 03
+                  MC 03
                   <br />
                   Strategies for machine adaptation
                 </td>
@@ -1169,6 +1169,12 @@ const ProgramSection: React.FC = () => {
             </tbody>
           </table>
         </div>
+        <p>
+          MC = Mini Course
+        </p>
+        {/*<p>
+          WG = Working Groups
+        </p>*/}
 
         {/* ---------- LEGEND ---------- */}
         <div className="mt-8">
@@ -1189,7 +1195,7 @@ const ProgramSection: React.FC = () => {
               <span
                 className={`inline-block h-5 w-12 rounded ${c.invited}`}
               />
-              <span>Invited Lectures</span>
+              <span>MC</span>
             </div>
 
             <div className="flex items-center gap-2">
