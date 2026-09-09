@@ -500,7 +500,7 @@ const LecturersSection: React.FC = () => (
         <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Luigi Laura</p>
           <p className="text-base text-gray-600 mt-1">
-            Faculty of Engineering University Uninettuno, Italy
+            Faculty of Engineering <br /> University Uninettuno, Italy
           </p>
 
           <div className="mt-4">
