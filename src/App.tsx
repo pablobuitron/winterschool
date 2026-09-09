@@ -250,20 +250,6 @@ const HomeSection: React.FC = () => (
                   className="h-32 object-contain bg-white p-4 rounded-lg shadow"
                 />
               </a>
-
-              <a
-                href="https://www.uninettunouniversity.net/en/sezione-di-matematica.aspx"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform hover:scale-105"
-              >
-                <img
-                  src="./uninetlogo.png"
-                  alt="Università Telematica Internazionale UNINETTUNO Section of mathematics"
-                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
-                />
-              </a>
-
               {/* Computational Learning and Design */}
               <a
                 href="https://sites.google.com/uninettunouniversity.net/cld"
@@ -277,6 +263,23 @@ const HomeSection: React.FC = () => (
                   className="h-32 object-contain bg-white p-4 rounded-lg shadow"
                 />
               </a>
+
+
+              {/* UNINETTUNO maths */}
+              <a
+                href="https://www.uninettunouniversity.net/en/sezione-di-matematica.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./uninetlogo.png"
+                  alt="Università Telematica Internazionale UNINETTUNO Section of mathematics"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
+
+              
 
             </div>
           </div>
