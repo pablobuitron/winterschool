@@ -24,10 +24,10 @@ function App() {
   ];*/
 
   const organizingCommittee: Member[] = [
-    { name: 'Dario Assante', affiliation: 'International Telematic University UNINETTUNO, Italy' },
-    { name: 'Pablo Buitron', affiliation: 'International Telematic University UNINETTUNO, Italy' },
-    { name: 'Clemente Cesarano', affiliation: 'International Telematic University UNINETTUNO, Italy' },
-    { name: 'Alessandro Pollini', affiliation: 'International Telematic University UNINETTUNO, Italy' },
+    { name: 'Dario Assante', affiliation: 'University UNINETTUNO, Italy' },
+    { name: 'Pablo Buitron', affiliation: 'University UNINETTUNO, Italy' },
+    { name: 'Clemente Cesarano', affiliation: 'University UNINETTUNO, Italy' },
+    { name: 'Alessandro Pollini', affiliation: 'University UNINETTUNO, Italy' },
   ];
 
   const scientificCommittee: Member[] = [/*
@@ -484,7 +484,7 @@ const LecturersSection: React.FC = () => (
         <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Claus-Christian Carbon</p>
           <p className="text-base text-gray-600 mt-1">
-            Bamberg
+            Faculty of Human Sciences and Education University of Bamberg, Germany
           </p>
 
           <div className="mt-4">
@@ -500,7 +500,7 @@ const LecturersSection: React.FC = () => (
         <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Luigi Laura</p>
           <p className="text-base text-gray-600 mt-1">
-            Uninettuno
+            Faculty of Engineering University Uninettuno, Italy
           </p>
 
           <div className="mt-4">
@@ -541,7 +541,7 @@ const SeminarsSection: React.FC = () => (
         <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Simone Pozzi</p>
           <p className="text-base text-gray-600 mt-1">
-            DeepBlue
+            DeepBlue s.r.l. Roma, Italy
           </p>
 
           <div className="mt-4">
@@ -557,7 +557,7 @@ const SeminarsSection: React.FC = () => (
         <div>
           <p className="text-lg font-semibold">Carlo Consoli</p>
           <p className="text-base text-gray-600 mt-1">
-            DOS design
+            DOS design Roma, Italy
           </p>
 
           <div className="mt-4">
