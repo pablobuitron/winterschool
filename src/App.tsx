@@ -109,7 +109,7 @@ function App() {
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-none mx-auto px-4 sm:px-5 lg:px-6">
           <div className="flex justify-between items-center h-16">
-            <h1 className="text-xl font-bold text-[#17172F] whitespace-nowrap"><a href="https://cldws2027.uninettunouniversity.net/#home" target="_blank" rel="noopener noreferrer" >Winter School 2027</a></h1>
+            <h1 className="text-xl font-bold text-[#17172F] whitespace-nowrap"><a href="https://cldws2027.uninettunouniversity.net/#home" rel="noopener noreferrer" >Winter School 2027</a></h1>
             <div className="hidden md:block">
               <div className="ml-4 flex items-baseline space-x-4">
                 {navItems.map((item) => (
