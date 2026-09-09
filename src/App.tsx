@@ -1276,10 +1276,37 @@ const ImportantDatesSection: React.FC = () => (
 const SponsorsSection: React.FC = () => (
   <SectionWrapper title="Sponsors">
     <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
-      <p>
-        Sponsors and institutional partners of the Winter School will be
-        announced soon.
-      </p>
+      <div className="flex flex-wrap justify-start items-center gap-12">
+
+        {/* EIT HEI */}
+        <a
+          href="https://eit-hei.eu/funded-projects/explorer/impact-campus/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-transform hover:scale-105"
+        >
+          <img
+            src="./eitlogo.png"
+            alt="EIT HEI"
+            className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+          />
+        </a>
+
+        {/* IMPACT Campus */}
+        <a
+          href="https://www.impact-campus.info/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-transform hover:scale-105"
+        >
+          <img
+            src="./impactcampuslogo.png"
+            alt="IMPACT Campus"
+            className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+          />
+        </a>
+
+      </div>
     </div>
   </SectionWrapper>
 );
