@@ -198,7 +198,7 @@ const HomeSection: React.FC = () => (
             <p>Practical Experiments and Industrial Cases</p>
             <p>February 1–5, 2027</p>
             <p>Domus Academy</p>
-            <p>Via Carlo Darwin, 20 — Milan, Italy</p>
+            <p>Via Carlo Darwin, 20 — Milano, Italy</p>
           </div>
         </div>
 
@@ -1188,7 +1188,7 @@ const ProgramSection: React.FC = () => {
               <span
                 className={`inline-block h-5 w-12 rounded ${c.opening}`}
               />
-              <span>Opening / Seminar</span>
+              <span>Opening / Introduction</span>
             </div>
 
             <div className="flex items-center gap-2">
