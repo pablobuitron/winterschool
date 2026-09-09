@@ -24,10 +24,10 @@ function App() {
   ];*/
 
   const organizingCommittee: Member[] = [
-    { name: 'Dario Assante', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-    { name: 'Pablo Buitron', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-    { name: 'Clemente Cesarano', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
-    { name: 'Alessandro Pollini', affiliation: 'Università Telematica Internazionale UNINETTUNO, Italy' },
+    { name: 'Dario Assante', affiliation: 'International Telematic University UNINETTUNO, Italy' },
+    { name: 'Pablo Buitron', affiliation: 'International Telematic University UNINETTUNO, Italy' },
+    { name: 'Clemente Cesarano', affiliation: 'International Telematic University UNINETTUNO, Italy' },
+    { name: 'Alessandro Pollini', affiliation: 'International Telematic University UNINETTUNO, Italy' },
   ];
 
   const scientificCommittee: Member[] = [/*
