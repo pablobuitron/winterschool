@@ -779,7 +779,7 @@ const ProgramSection: React.FC = () => {
               {/* ---------- 10:30–11:20 ---------- */}
               <tr>
                 <td className={`p-2 text-center font-medium ${c.time}`}>
-                  10:30–11:20
+                  10:40–11:20
                 </td>
 
                 <td className={c.gray}></td>
