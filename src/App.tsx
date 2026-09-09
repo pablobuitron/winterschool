@@ -541,7 +541,7 @@ const SeminarsSection: React.FC = () => (
         <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Simone Pozzi</p>
           <p className="text-base text-gray-600 mt-1">
-            DeepBlue s.r.l. Roma, Italy
+            DeepBlue s.r.l. <br /> Roma, Italy
           </p>
 
           <div className="mt-4">
@@ -557,7 +557,7 @@ const SeminarsSection: React.FC = () => (
         <div>
           <p className="text-lg font-semibold">Carlo Consoli</p>
           <p className="text-base text-gray-600 mt-1">
-            DOS design Roma, Italy
+            DOS Design <br /> Roma, Italy
           </p>
 
           <div className="mt-4">
