@@ -514,9 +514,9 @@ const LecturersSection: React.FC = () => (
         </div>
 
         <div>
-          <p className="text-lg font-semibold">Antonietta Grasso</p>
+          <p className="text-lg font-semibold">Maria Antonietta Grasso</p>
           <p className="text-base text-gray-600 mt-1">
-            NAVER LAB
+            Naver Labs <br /> Meylan, France
           </p>
 
           <div className="mt-4">
