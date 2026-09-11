@@ -109,14 +109,21 @@ function App() {
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-none mx-auto px-4 sm:px-5 lg:px-6">
           <div className="flex justify-between items-center h-16">
-            <h1 className="text-xl font-bold text-[#17172F] whitespace-nowrap"><button onClick={() => handleNavClick('home')}> Winter School 2027</button></h1>
+            <h1 className="text-xl font-bold text-[#17172F] whitespace-nowrap">
+              <button onClick={() => handleNavClick('home')}>
+                {' '}
+                Winter School 2027
+              </button>
+            </h1>
+
             <div className="hidden md:block">
               <div className="ml-4 flex items-baseline space-x-4">
                 {navItems.map((item) => (
                   <button
                     key={item}
                     onClick={() => handleNavClick(item)}
-                    className={`px-3 py-2 text-sm rounded-md transition-colors ${activeSection === item.toLowerCase().replace(/ /g, '-')
+                    className={`px-3 py-2 text-sm rounded-md transition-colors ${activeSection ===
+                        item.toLowerCase().replace(/ /g, '-')
                         ? 'bg-[#666666] text-[#17172F] font-bold'
                         : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
                       }`}
@@ -126,6 +133,7 @@ function App() {
                 ))}
               </div>
             </div>
+
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -144,9 +152,10 @@ function App() {
                 <button
                   key={item}
                   onClick={() => handleNavClick(item)}
-                  className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-colors ${activeSection === item.toLowerCase().replace(/ /g, '-')
-                      ? 'bg-[#F53A4B] text-white'
-                      : 'text-gray-700 hover:bg-gray-100 hover:text-[#F53A4B]'
+                  className={`block w-full text-left px-3 py-2 text-base rounded-md transition-colors ${activeSection ===
+                      item.toLowerCase().replace(/ /g, '-')
+                      ? 'bg-[#F53A4B] text-white font-bold'
+                      : 'text-gray-700 hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
                     }`}
                 >
                   {item}
@@ -163,10 +172,10 @@ function App() {
 }
 
 /* ---------- SECTION WRAPPER ---------- */
-const SectionWrapper: React.FC<{ title: string; children: React.ReactNode }> = ({
-  title,
-  children,
-}) => (
+const SectionWrapper: React.FC<{
+  title: string;
+  children: React.ReactNode;
+}> = ({ title, children }) => (
   <div>
     <section className="bg-[#666666] text-[#17172F] py-20 text-center">
       <h2 className="text-4xl font-bold">{title}</h2>
@@ -196,8 +205,11 @@ const HomeSection: React.FC = () => (
           </h1>
 
           <div className="text-xl md:text-3xl text-[#17172F] space-y-2">
-            <p><strong>Practical Experiments and Industrial Cases</strong></p>
-          </div>  
+            <p>
+              <strong>Practical Experiments and Industrial Cases</strong>
+            </p>
+          </div>
+
           <div className="text-xl md:text-2xl text-[#17172F] space-y-2">
             <br />
             <p>February 1–5, 2027</p>
@@ -220,7 +232,8 @@ const HomeSection: React.FC = () => (
               </span>
               <br />
               <span className="text-white/85">
-                (E. Mari, for the catalogue of the exhibition <em>Arte Programmata</em> in Düsseldorf, 1963, image from MoMA)
+                (E. Mari, for the catalogue of the exhibition{' '}
+                <em>Arte Programmata</em> in Düsseldorf, 1963, image from MoMA)
               </span>
             </div>
           </div>
@@ -254,6 +267,7 @@ const HomeSection: React.FC = () => (
                   className="h-32 object-contain bg-white p-4 rounded-lg shadow"
                 />
               </a>
+
               {/* Computational Learning and Design */}
               <a
                 href="https://sites.google.com/uninettunouniversity.net/cld"
@@ -268,7 +282,6 @@ const HomeSection: React.FC = () => (
                 />
               </a>
 
-
               {/* UNINETTUNO maths */}
               <a
                 href="https://www.uninettunouniversity.net/en/sezione-di-matematica.aspx"
@@ -282,8 +295,6 @@ const HomeSection: React.FC = () => (
                   className="h-32 object-contain bg-white p-4 rounded-lg shadow"
                 />
               </a>
-
-              
 
             </div>
           </div>
@@ -437,7 +448,6 @@ const CommitteesSection: React.FC<{
   </SectionWrapper>
 );
 
-
 /* ---------- WORKING GROUPS ---------- */
 const WorkingGroupsSection: React.FC = () => (
   <SectionWrapper title="Working Groups">
@@ -456,8 +466,6 @@ const WorkingGroupsSection: React.FC = () => (
   </SectionWrapper>
 );
 
-
-
 /* ---------- POSTERS ---------- */
 const PostersSection: React.FC = () => (
   <SectionWrapper title="Posters">
@@ -475,7 +483,6 @@ const PostersSection: React.FC = () => (
   </SectionWrapper>
 );
 
-
 /* ---------- LECTURERS ---------- */
 const LecturersSection: React.FC = () => (
   <SectionWrapper title="Lecturers">
@@ -488,7 +495,8 @@ const LecturersSection: React.FC = () => (
         <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Claus-Christian Carbon</p>
           <p className="text-base text-gray-600 mt-1">
-            Faculty of Human Sciences and Education University of Bamberg, Germany
+            Faculty of Human Sciences and Education University of Bamberg,
+            Germany
           </p>
 
           <div className="mt-4">
@@ -577,6 +585,7 @@ const SeminarsSection: React.FC = () => (
     </div>
   </SectionWrapper>
 );
+
 /* ---------- PROGRAM ---------- */
 const ProgramSection: React.FC = () => {
   const c = {
@@ -1173,9 +1182,11 @@ const ProgramSection: React.FC = () => {
             </tbody>
           </table>
         </div>
+
         <p>
           MC = Mini Course
         </p>
+
         {/*<p>
           WG = Working Groups
         </p>*/}
@@ -1229,14 +1240,14 @@ const ProgramSection: React.FC = () => {
               />
               <span>Conclusion</span>
             </div>
+
           </div>
         </div>
+
       </div>
     </SectionWrapper>
   );
 };
-
-
 
 /* ---------- REGISTRATION ---------- */
 const RegistrationSection: React.FC = () => (
@@ -1280,7 +1291,6 @@ const ImportantDatesSection: React.FC = () => (
     </div>
   </SectionWrapper>
 );
-
 
 /* ---------- SPONSORS ---------- */
 const SponsorsSection: React.FC = () => (
@@ -1369,6 +1379,5 @@ const VenueSection: React.FC = () => (
     </div>
   </SectionWrapper>
 );
-
 
 export default App;
