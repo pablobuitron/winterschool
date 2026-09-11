@@ -118,7 +118,7 @@ function App() {
                     onClick={() => handleNavClick(item)}
                     className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${activeSection === item.toLowerCase().replace(/ /g, '-')
                         ? 'bg-[#666666] text-[#17172F]font-extrabold'
-                      : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
+                      : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-bold'
                       }`}
                   >
                     {item}
