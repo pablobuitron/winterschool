@@ -195,8 +195,10 @@ const HomeSection: React.FC = () => (
             and Design
           </h1>
 
+          <div className="text-xl md:text-3xl text-[#17172F] space-y-2">
+            <p><strong>Practical Experiments and Industrial Cases</strong></p>
+          </div>  
           <div className="text-xl md:text-2xl text-[#17172F] space-y-2">
-            <p>Practical Experiments and Industrial Cases</p>
             <p>February 1–5, 2027</p>
             <p>Domus Academy</p>
             <p>Via Carlo Darwin, 20 — Milano, Italy</p>
