@@ -1274,8 +1274,16 @@ const RegistrationSection: React.FC = () => (
       </ul>
 
       <p>
-        Registration details, participation fees and application deadlines
-        will be announced soon.
+        You can register{" "}
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe9T4RHCgxVi65PdoA0hvUKMNMn4FINWV8rgmPWgfNWFt1OLw/viewform?usp=publish-editor"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-700 underline hover:text-blue-900"
+        >
+          here
+        </a>
+        .
       </p>
     </div>
   </SectionWrapper>
