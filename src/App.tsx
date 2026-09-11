@@ -186,7 +186,7 @@ const HomeSection: React.FC = () => (
 
         <div className="flex-1 text-left space-y-8">
           <p className="text-lg md:text-xl uppercase tracking-[0.25em] text-[#17172F] font-medium">
-            International Interdisciplinary Winter School on
+            International and Interdisciplinary Winter School on
           </p>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -599,7 +599,7 @@ const ProgramSection: React.FC = () => {
 
         <div className="mb-8">
           <h3 className="text-2xl font-semibold text-gray-900">
-            International Interdisciplinary Winter School on Computational
+            International and Interdisciplinary Winter School on Computational
             Learning and Design
           </h3>
 
