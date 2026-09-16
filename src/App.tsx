@@ -360,6 +360,25 @@ const HomeSection: React.FC = () => (
                 />
               </a>
             </div>
+            <div>
+              <p className="text-left mb-6">
+                <strong>Partners:</strong>
+              </p>
+
+              <div className="flex flex-wrap justify-start items-center gap-12">
+                <a
+                  href="https://www.domusacademy.com/it/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-transform hover:scale-105"
+                >
+                  <img
+                    src="./domus-academy-logo.png"
+                    alt="Domus Academy"
+                    className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                  />
+                </a>
+              </div>
           </div>
 
         </div>
