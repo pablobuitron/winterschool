@@ -491,18 +491,16 @@ const WorkingGroupsSection: React.FC = () => (
 /* ---------- WORKING GROUPS ---------- */
 const WorkingGroupsSection: React.FC = () => (
   <SectionWrapper title="Working Groups">
-    <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
-      <p>
-        Working Groups will provide participants with the opportunity to
-        collaborate on interdisciplinary topics related to computational
-        learning, mathematics and design.
-        <br />
-      </p>
-    </div>
     <div className="max-w-5xl mx-auto text-gray-800 space-y-12">
 
       {/* ---------- WG 1 ---------- */}
       <div className="border-b border-gray-200 pb-10">
+        <p>
+          Working Groups will provide participants with the opportunity to
+          collaborate on interdisciplinary topics related to computational
+          learning, mathematics and design.
+          <br />
+        </p>
         <h3 className="text-2xl font-semibold text-[#17172F]">
           WG 1 – Differential Equations / Adaptive Interaction Design
         </h3>
