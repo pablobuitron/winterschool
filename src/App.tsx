@@ -55,7 +55,7 @@ function App() {
     'Program',
     'Registration',
     'Important Dates',
-    'Sponsors',
+    //'Sponsors',
     'Venue',
   ];
 
@@ -95,8 +95,8 @@ function App() {
         return <RegistrationSection />;
       case 'important-dates':
         return <ImportantDatesSection />;
-      case 'sponsors':
-        return <SponsorsSection />;
+      //case 'sponsors':
+        //return <SponsorsSection />;
       case 'venue':
         return <VenueSection />;
       default:
@@ -1507,13 +1507,13 @@ const ImportantDatesSection: React.FC = () => (
   </SectionWrapper>
 );
 
-/* ---------- SPONSORS ---------- */
+/* ---------- SPONSORS ---------- 
 const SponsorsSection: React.FC = () => (
   <SectionWrapper title="Sponsors">
     <div className="max-w-3xl mx-auto text-gray-800 text-base leading-relaxed space-y-6">
       <div className="flex flex-wrap justify-start items-center gap-12">
 
-        {/* EIT HEI */}
+        
         <a
           href="https://eit-hei.eu/funded-projects/explorer/impact-campus/"
           target="_blank"
@@ -1527,7 +1527,7 @@ const SponsorsSection: React.FC = () => (
           />
         </a>
 
-        {/* IMPACT Campus */}
+        
         <a
           href="https://www.impact-campus.info/"
           target="_blank"
@@ -1544,7 +1544,7 @@ const SponsorsSection: React.FC = () => (
       </div>
     </div>
   </SectionWrapper>
-);
+);*/
 
 /*----- VENUE -------- */
 /* ---------- VENUE ---------- */
