@@ -379,7 +379,7 @@ const HomeSection: React.FC = () => (
               </a>
             </div>
           </div>
-
+          </div>
         </div>
       </div>
     </section>
