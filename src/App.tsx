@@ -452,7 +452,7 @@ const CommitteesSection: React.FC<{
   </SectionWrapper>
 );
 
-/* ---------- WORKING GROUPS ---------- */
+/* ---------- WORKING GROUPS ---------- 
 const WorkingGroupsSection: React.FC = () => (
   <SectionWrapper title="Working Groups">
     <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
@@ -466,6 +466,183 @@ const WorkingGroupsSection: React.FC = () => (
         Further information about the topics, coordinators and activities will
         be announced soon.
       </p>
+    </div>
+  </SectionWrapper>
+);
+
+/* ---------- WORKING GROUPS ---------- */
+const WorkingGroupsSection: React.FC = () => (
+  <SectionWrapper title="Working Groups">
+    <div className="max-w-5xl mx-auto text-gray-800 space-y-12">
+
+      {/* ---------- WG 1 ---------- */}
+      <div className="border-b border-gray-200 pb-10">
+        <h3 className="text-2xl font-semibold text-[#17172F]">
+          WG 1 – Differential Equations / Adaptive Interaction Design
+        </h3>
+
+        <div className="mt-3">
+          <p className="font-semibold">
+            Alessandro Pollini – University UNINETTUNO
+          </p>
+          <p className="font-semibold">
+            Clemente Cesarano – University UNINETTUNO
+          </p>
+        </div>
+
+        <h4 className="text-lg font-semibold mt-6">
+          Systems that change over time
+        </h4>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The working group investigates the intersection between the
+          mathematical modeling of dynamical systems through differential
+          equations, which describe their evolution, stability, and rates of
+          change, and the design of interactions and interfaces that are
+          themselves capable of adapting over time to context, behavior, and
+          user state.
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The focus will be on translating principles of continuous variation
+          and feedback into design decisions that determine when and how an
+          interactive system updates, while preserving legibility and
+          predictability for the user.
+        </p>
+
+        <p className="mt-5 text-base leading-relaxed italic text-[#17172F]">
+          How can the mathematics of continuous change be used to design
+          systems that adapt over time while remaining understandable and
+          reliable, rather than appearing arbitrary or unpredictable to the
+          user?
+        </p>
+      </div>
+
+      {/* ---------- WG 3 ---------- */}
+      <div className="border-b border-gray-200 pb-10">
+        <h3 className="text-2xl font-semibold text-[#17172F]">
+          WG 3 – Social Network Theory / Strategic Design for Manufacturing
+          Districts
+        </h3>
+
+        <div className="mt-3">
+          <p className="font-semibold">
+            Gabriele Goretti – University of Pisa
+          </p>
+          <p className="font-semibold">
+            Caterina Dastoli – University of Pisa
+          </p>
+        </div>
+
+        <h4 className="text-lg font-semibold mt-6">
+          From industrial network dynamics to infrastructures for coopetition
+        </h4>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The working group will focus on a critical discussion of the
+          transition of manufacturing districts from linear supply-chain
+          models and fragmented competition toward ecosystem-based relational
+          models founded on coopetition.
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The focus will be on the interdisciplinary dialogue between the
+          application of Social Network Theory and its role in understanding
+          industrial complex adaptive systems, together with the adoption of
+          strategic and systemic design.
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The latter is understood as a discipline capable of facilitating
+          collaboration and defining rules and formats of interaction,
+          adapting its design tools to the dynamic logic of complex adaptive
+          systems in order to foster network trust and the emergence of new
+          frameworks for coopetition.
+        </p>
+
+        <p className="mt-5 text-base leading-relaxed italic text-[#17172F]">
+          How can the combination of Social Network Theory and a systemic
+          design approach enable the self-organization of SMEs, transforming
+          historical rivalry into cooperative and resilient manufacturing
+          ecosystems?
+        </p>
+      </div>
+
+      {/* ---------- WG 4 ---------- */}
+      <div className="border-b border-gray-200 pb-10">
+        <h3 className="text-2xl font-semibold text-[#17172F]">
+          WG 4 – Knowledge-Based Systems / Information Design
+        </h3>
+
+        <div className="mt-3">
+          <p className="font-semibold">
+            Alessandra Scarcelli – Polytechnic University of Bari
+          </p>
+          <p className="font-semibold">
+            Marina Ricci – CNR-STIIMA / Polytechnic University of Bari
+          </p>
+        </div>
+
+        <h4 className="text-lg font-semibold mt-6">
+          From computational architectures to representations for
+          understanding
+        </h4>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The working group will examine the ways in which the
+          logical-computational structures of knowledge interact with visual
+          models oriented toward human cognition.
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The focus will be on the formalization of systemic relationships,
+          the explicit representation of latent model assumptions, and the
+          formal communication of uncertainty while preserving the integrity
+          of meaning.
+        </p>
+
+        <p className="mt-5 text-base leading-relaxed italic text-[#17172F]">
+          How can representation frameworks be designed to enable users to
+          interpret, validate, and critically evaluate a model&apos;s learning
+          process?
+        </p>
+      </div>
+
+      {/* ---------- WG 5 ---------- */}
+      <div>
+        <h3 className="text-2xl font-semibold text-[#17172F]">
+          WG 5 – Simulated Personalities / Cognitive Modeling
+        </h3>
+
+        <div className="mt-3">
+          <p className="font-semibold">
+            Giuseppe Corbelli – University UNINETTUNO
+          </p>
+          <p className="font-semibold">
+            Marco Cremaschi – University of Milano-Bicocca
+          </p>
+        </div>
+
+        <h4 className="text-lg font-semibold mt-6">
+          From personality constructs to traceable computational states
+        </h4>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The working group will examine how personality constructs, such as
+          traits, values, memory, and affective states, can be translated into
+          explicit computational representations, particularly when governed
+          within Large Language Models (LLMs).
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed">
+          The focus will be on distinguishing stable dispositions from
+          situated states, and on ensuring the traceability of the
+          transformations that a model undergoes over time, without confusing
+          the functional fidelity of a simulation with the existence of a
+          mind.
+        </p>
+      </div>
+
     </div>
   </SectionWrapper>
 );
