@@ -124,8 +124,8 @@ function App() {
                     onClick={() => handleNavClick(item)}
                     className={`px-3 py-2 text-sm rounded-md transition-colors ${activeSection ===
                         item.toLowerCase().replace(/ /g, '-')
-                        ? 'bg-[#666666] text-[#17172F] font-bold'
-                        : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
+                      ? 'bg-[#17172F] text-white font-bold'
+                      : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
                       }`}
                   >
                     {item}
@@ -154,8 +154,8 @@ function App() {
                   onClick={() => handleNavClick(item)}
                   className={`block w-full text-left px-3 py-2 text-base rounded-md transition-colors ${activeSection ===
                       item.toLowerCase().replace(/ /g, '-')
-                      ? 'bg-[#F53A4B] text-white font-bold'
-                      : 'text-gray-700 hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
+                    ? 'bg-[#17172F] text-white font-bold'
+                    : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
                     }`}
                 >
                   {item}
