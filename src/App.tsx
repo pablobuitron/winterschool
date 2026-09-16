@@ -305,7 +305,7 @@ const HomeSection: React.FC = () => (
 
           <div>
             <p className="text-left mb-6">
-              <strong>Within:</strong>
+              <strong>Funded by:</strong>
             </p>
 
             <div className="flex flex-wrap justify-start items-center gap-12">
@@ -473,6 +473,13 @@ const WorkingGroupsSection: React.FC = () => (
 /* ---------- WORKING GROUPS ---------- */
 const WorkingGroupsSection: React.FC = () => (
   <SectionWrapper title="Working Groups">
+    <div className="max-w-3xl mx-auto space-y-6 text-base leading-relaxed">
+      <p>
+        Working Groups will provide participants with the opportunity to
+        collaborate on interdisciplinary topics related to computational
+        learning, mathematics and design.
+      </p>
+    </div>
     <div className="max-w-5xl mx-auto text-gray-800 space-y-12">
 
       {/* ---------- WG 1 ---------- */}
