@@ -496,6 +496,7 @@ const WorkingGroupsSection: React.FC = () => (
         Working Groups will provide participants with the opportunity to
         collaborate on interdisciplinary topics related to computational
         learning, mathematics and design.
+        <br />
       </p>
     </div>
     <div className="max-w-5xl mx-auto text-gray-800 space-y-12">
