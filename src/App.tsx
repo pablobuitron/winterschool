@@ -495,12 +495,10 @@ const WorkingGroupsSection: React.FC = () => (
 
       {/* ---------- WG 1 ---------- */}
       <div className="border-b border-gray-200 pb-10">
-        <p>
+        <p className="mb-8">
           Working Groups will provide participants with the opportunity to
           collaborate on interdisciplinary topics related to computational
           learning, mathematics and design.
-          <br />
-           
         </p>
         <h3 className="text-2xl font-semibold text-[#17172F]">
           WG 1 – Differential Equations / Adaptive Interaction Design
