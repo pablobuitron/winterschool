@@ -106,7 +106,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <nav className="bg-white shadow-lg sticky top-0 z-50">
+      <nav className="bg-[#F53A4B] shadow-lg sticky top-0 z-50">
         <div className="max-w-none mx-auto px-4 sm:px-5 lg:px-6">
           <div className="flex justify-between items-center h-16">
             <h1 className="text-xl font-bold text-[#17172F] whitespace-nowrap">
@@ -146,7 +146,7 @@ function App() {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t">
+          <div className="md:hidden bg-[#F53A4B] border-t border-[#17172F]/20">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
                 <button
@@ -166,7 +166,11 @@ function App() {
         )}
       </nav>
 
-      <main className="flex-1">{renderContent()}</main>
+      <main className="flex-1">
+        {renderContent()}
+      </main>
+
+      <FooterSection />
     </div>
   );
 }
@@ -528,7 +532,7 @@ const LecturersSection: React.FC = () => (
         <div>
           <p className="text-lg font-semibold">Maria Antonietta Grasso</p>
           <p className="text-base text-gray-600 mt-1">
-            Naver Labs <br /> Meylan, France
+            Naver Labs <br /> Grenoble, France
           </p>
 
           <div className="mt-4">
@@ -1386,6 +1390,26 @@ const VenueSection: React.FC = () => (
       </div>
     </div>
   </SectionWrapper>
+);
+
+
+/* ---------- FOOTER ---------- */
+const FooterSection: React.FC = () => (
+  <footer className="mt-16">
+    <div className="relative w-full overflow-hidden">
+      <img
+        src="./vasarely-footer.jpg"
+        alt='Victor Vasarely, "Folklore planetario", unità plastica, 1963'
+        className="w-full h-56 md:h-72 object-cover"
+      />
+
+      <div className="absolute inset-x-0 bottom-0 bg-black/60 px-6 py-4">
+        <p className="text-sm md:text-base text-white text-right">
+          Detail — Victor Vasarely, <em>“Folklore planetario”</em>, unità plastica, 1963.
+        </p>
+      </div>
+    </div>
+  </footer>
 );
 
 export default App;
