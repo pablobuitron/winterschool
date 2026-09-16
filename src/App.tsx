@@ -500,6 +500,7 @@ const WorkingGroupsSection: React.FC = () => (
           collaborate on interdisciplinary topics related to computational
           learning, mathematics and design.
           <br />
+           
         </p>
         <h3 className="text-2xl font-semibold text-[#17172F]">
           WG 1 – Differential Equations / Adaptive Interaction Design
