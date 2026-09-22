@@ -847,8 +847,9 @@ const LecturersSection: React.FC = () => (
 /* ---------- SEMINARS ---------- */
 const SeminarsSection: React.FC = () => (
   <SectionWrapper title="Seminars">
-    <div className="max-w-5xl mx-auto text-gray-800">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="max-w-7xl mx-auto text-gray-800">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+
         <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Simone Pozzi</p>
           <p className="text-base text-gray-600 mt-1">
@@ -865,7 +866,7 @@ const SeminarsSection: React.FC = () => (
           </div>
         </div>
 
-        <div>
+        <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Carlo Consoli</p>
           <p className="text-base text-gray-600 mt-1">
             DOS Design <br /> Roma, Italy
@@ -880,10 +881,8 @@ const SeminarsSection: React.FC = () => (
             </h3>
           </div>
         </div>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
+        <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
           <p className="text-lg font-semibold">Angelo Donvito</p>
           <p className="text-base text-gray-600 mt-1">
             DIGIMAT <br /> Matera, Italy
@@ -914,11 +913,11 @@ const SeminarsSection: React.FC = () => (
             </h3>
           </div>
         </div>
+
       </div>
     </div>
   </SectionWrapper>
 );
-
 /* ---------- PROGRAM ---------- */
 const ProgramSection: React.FC = () => {
   const c = {
