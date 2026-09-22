@@ -880,7 +880,9 @@ const SeminarsSection: React.FC = () => (
             </h3>
           </div>
         </div>
+      </div>
 
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <p className="text-lg font-semibold">Angelo Donvito</p>
           <p className="text-base text-gray-600 mt-1">
@@ -912,8 +914,6 @@ const SeminarsSection: React.FC = () => (
             </h3>
           </div>
         </div>
-
-
       </div>
     </div>
   </SectionWrapper>
