@@ -880,6 +880,40 @@ const SeminarsSection: React.FC = () => (
             </h3>
           </div>
         </div>
+
+        <div>
+          <p className="text-lg font-semibold">Angelo Donvito</p>
+          <p className="text-base text-gray-600 mt-1">
+            DIGIMAT <br /> Matera, Italy
+          </p>
+
+          <div className="mt-4">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+              Title
+            </p>
+            <h3 className="text-lg font-semibold leading-snug mt-1">
+              TBA
+            </h3>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-lg font-semibold">Andrea del Sole</p>
+          <p className="text-base text-gray-600 mt-1">
+            NEAT <br /> Roma, Italy
+          </p>
+
+          <div className="mt-4">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+              Title
+            </p>
+            <h3 className="text-lg font-semibold leading-snug mt-1">
+              TBA
+            </h3>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </SectionWrapper>
