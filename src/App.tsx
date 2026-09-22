@@ -834,7 +834,7 @@ const LecturersSection: React.FC = () => (
               Title
             </p>
             <h3 className="text-lg font-semibold leading-snug mt-1">
-              Cognitive science and AI
+              “Psychology for AI: What We Gain, What We Lose, and How We Change”
             </h3>
           </div>
         </div>
@@ -850,7 +850,7 @@ const LecturersSection: React.FC = () => (
               Title
             </p>
             <h3 className="text-lg font-semibold leading-snug mt-1">
-              Algorithms and AI
+              “From the Algorithms of Babylon to the AI Agents of Silicon Valley”
             </h3>
           </div>
         </div>
@@ -866,7 +866,7 @@ const LecturersSection: React.FC = () => (
               Title
             </p>
             <h3 className="text-lg font-semibold leading-snug mt-1">
-              Socio-technical systems and AI
+              "Designing AI in Context: Adaptability and Trust”"
             </h3>
           </div>
         </div>
