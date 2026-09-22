@@ -439,18 +439,48 @@ const CommitteesSection: React.FC<{
 }> = ({ organizingCommittee, scientificCommittee }) => (
   <SectionWrapper title="Committees">
     <div className="max-w-3xl mx-auto space-y-10">
+
       <div>
-        <h3 className="text-2xl font-semibold text-[#17172F] mb-4">
+        <h3 className="text-2xl font-semibold text-[#17172F] mb-6">
           Organizing Committee
         </h3>
 
-        <ul className="space-y-1">
-          {organizingCommittee.map((member, index) => (
-            <li key={index}>
-              {member.name} ({member.affiliation})
-            </li>
-          ))}
-        </ul>
+        <div className="space-y-6">
+
+          <div>
+            <h4 className="text-lg font-semibold text-[#17172F] mb-2">
+              Scientific Direction
+            </h4>
+
+            <p>
+              Clemente Cesarano (University UNINETTUNO, Italy)
+            </p>
+            <p>
+              Alessandro Pollini (University UNINETTUNO, Italy)
+            </p>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold text-[#17172F] mb-2">
+              Advisory
+            </h4>
+
+            <p>
+              Dario Assante (University UNINETTUNO, Italy)
+            </p>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold text-[#17172F] mb-2">
+              Technical Support
+            </h4>
+
+            <p>
+              Pablo Buitron (University UNINETTUNO, Italy)
+            </p>
+          </div>
+
+        </div>
       </div>
 
       {scientificCommittee.length > 0 && (
@@ -468,6 +498,7 @@ const CommitteesSection: React.FC<{
           </ul>
         </div>
       )}
+
     </div>
   </SectionWrapper>
 );
