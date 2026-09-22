@@ -878,78 +878,148 @@ const LecturersSection: React.FC = () => (
 /* ---------- SEMINARS ---------- */
 const SeminarsSection: React.FC = () => (
   <SectionWrapper title="Seminars">
-    <div className="max-w-7xl mx-auto text-gray-800">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div className="max-w-5xl mx-auto text-gray-800 space-y-12">
 
-        <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
-          <p className="text-lg font-semibold">Simone Pozzi</p>
-          <p className="text-base text-gray-600 mt-1">
-            DeepBlue s.r.l. <br /> Roma, Italy
+      {/* ---------- Simone Pozzi ---------- */}
+      <div className="border-b border-gray-200 pb-10">
+        <p className="text-xl font-semibold">Simone Pozzi</p>
+
+        <p className="text-base text-gray-600 mt-1">
+          DeepBlue s.r.l. <br /> Roma, Italy
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
           </p>
 
-          <div className="mt-4">
-            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-              Title
-            </p>
-            <h3 className="text-lg font-semibold leading-snug mt-1">
-              AI and transport
-            </h3>
-          </div>
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            AI and transport
+          </h3>
         </div>
 
-        <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
-          <p className="text-lg font-semibold">Carlo Consoli</p>
-          <p className="text-base text-gray-600 mt-1">
-            DOS Design <br /> Roma, Italy
+        <div className="mt-6">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
           </p>
 
-          <div className="mt-4">
-            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-              Title
-            </p>
-            <h3 className="text-lg font-semibold leading-snug mt-1">
-              AI and functional decomposition
-            </h3>
-          </div>
-        </div>
-
-        <div className="border-r-0 md:border-r border-gray-200 md:pr-8">
-          <p className="text-lg font-semibold">Angelo Donvito</p>
-          <p className="text-base text-gray-600 mt-1">
-            DIGIMAT <br /> Matera, Italy
+          <p className="mt-2 text-base leading-relaxed">
+            TBA
           </p>
-
-          <div className="mt-4">
-            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-              Title
-            </p>
-            <h3 className="text-lg font-semibold leading-snug mt-1">
-              TBA
-            </h3>
-          </div>
         </div>
-
-        <div>
-          <p className="text-lg font-semibold">Andrea del Sole</p>
-          <p className="text-base text-gray-600 mt-1">
-            NEAT <br /> Roma, Italy
-          </p>
-
-          <div className="mt-4">
-            <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-              Title
-            </p>
-            <h3 className="text-lg font-semibold leading-snug mt-1">
-              TBA
-            </h3>
-          </div>
-        </div>
-
       </div>
+
+      {/* ---------- Carlo Consoli ---------- */}
+      <div className="border-b border-gray-200 pb-10">
+        <p className="text-xl font-semibold">Carlo Consoli</p>
+
+        <p className="text-base text-gray-600 mt-1">
+          DOS Design <br /> Roma, Italy
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            Deconstructing Artificial Intelligence: Methods, Models, Use Cases
+            and Ethical Aspects for Building Valuable AI Initiatives
+          </h3>
+        </div>
+
+        <div className="mt-6">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
+          </p>
+
+          <div className="mt-2 text-base leading-relaxed space-y-4">
+            <p>
+              The seminar explores Artificial Intelligence as a driving force
+              of modern digital transformation. It aims to guide participants
+              through the theoretical, methodological and practical evolution
+              of AI, from its key concepts to the most recent innovations in
+              Machine Learning, Natural Language Processing (NLP) and
+              Generative AI.
+            </p>
+
+            <p>
+              The seminar will examine the scientific foundations underlying
+              the individual disciplines, successful operational
+              methodologies, such as the iterative CRISP-DM methodology, and
+              concrete use cases from industrial and business contexts.
+            </p>
+
+            <p>
+              The seminar will conclude with an introduction to ethical issues
+              and the resulting implications for the development of an
+              “Ethical by Design” approach to Artificial Intelligence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ---------- Angelo Donvito ---------- */}
+      <div className="border-b border-gray-200 pb-10">
+        <p className="text-xl font-semibold">Angelo Donvito</p>
+
+        <p className="text-base text-gray-600 mt-1">
+          DIGIMAT <br /> Matera, Italy
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            TBA
+          </h3>
+        </div>
+
+        <div className="mt-6">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
+          </p>
+
+          <p className="mt-2 text-base leading-relaxed">
+            TBA
+          </p>
+        </div>
+      </div>
+
+      {/* ---------- Andrea del Sole ---------- */}
+      <div>
+        <p className="text-xl font-semibold">Andrea del Sole</p>
+
+        <p className="text-base text-gray-600 mt-1">
+          NEAT <br /> Roma, Italy
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            TBA
+          </h3>
+        </div>
+
+        <div className="mt-6">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
+          </p>
+
+          <p className="mt-2 text-base leading-relaxed">
+            TBA
+          </p>
+        </div>
+      </div>
+
     </div>
   </SectionWrapper>
 );
-
 
 /* ---------- PROGRAM ---------- */
 const ProgramSection: React.FC = () => {
