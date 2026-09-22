@@ -1006,27 +1006,35 @@ const ProgramSection: React.FC = () => {
                 <td className={c.gray}></td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 01
+                  MC 01 - Claus-Christian Carbon
                   <br />
                   Computational Learning and Design
+                  <br />
+                  “Psychology for AI: What We Gain, What We Lose, and How We Change”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 03
+                  MC 03 - Maria Antonietta Grasso
                   <br />
                   Strategies for machine adaptation
+                  <br />
+                  “Designing AI in Context: Adaptability and Trust”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 02
+                  MC 02 - Luigi Laura
                   <br />
                   Dynamic systems: from equal differentials to logics
+                  <br />
+                  “From the Algorithms of Babylon to the AI Agents of Silicon Valley.”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 01
+                  MC 01 - Claus-Christian Carbon
                   <br />
                   Computational Learning and Design
+                  <br />
+                  “Psychology for AI: What We Gain, What We Lose, and How We Change”
                 </td>
               </tr>
 
@@ -1039,27 +1047,35 @@ const ProgramSection: React.FC = () => {
                 <td className={c.gray}></td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 02
+                  MC 02 - Luigi Laura
                   <br />
                   Dynamic systems: from equal differentials to logics
+                  <br />
+                  “From the Algorithms of Babylon to the AI Agents of Silicon Valley.”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 01
+                  MC 01 - Claus-Christian Carbon
                   <br />
                   Computational Learning and Design
+                  <br />
+                  “Psychology for AI: What We Gain, What We Lose, and How We Change”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 01
+                  MC 01 - Claus-Christian Carbon
                   <br />
                   Computational Learning and Design
+                  <br />
+                  “Psychology for AI: What We Gain, What We Lose, and How We Change”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 02
+                  MC 02 - Luigi Laura
                   <br />
                   Dynamic systems: from equal differentials to logics
+                  <br />
+                  “From the Algorithms of Babylon to the AI Agents of Silicon Valley.”
                 </td>
               </tr>
 
@@ -1097,27 +1113,35 @@ const ProgramSection: React.FC = () => {
                 <td className={c.gray}></td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 03
+                  MC 03 - Maria Antonietta Grasso
                   <br />
                   Strategies for machine adaptation
+                  <br />
+                  “Designing AI in Context: Adaptability and Trust”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 02
+                  MC 02 - Luigi Laura
                   <br />
                   Dynamic systems: from equal differentials to logics
+                  <br />
+                  “From the Algorithms of Babylon to the AI Agents of Silicon Valley.”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 03
+                  MC 03 - Maria Antonietta Grasso
                   <br />
                   Strategies for machine adaptation
+                  <br />
+                  “Designing AI in Context: Adaptability and Trust”
                 </td>
 
                 <td className={`p-3 font-medium ${c.invited}`}>
-                  MC 03
+                  MC 03 - Maria Antonietta Grasso
                   <br />
                   Strategies for machine adaptation
+                  <br />
+                  “Designing AI in Context: Adaptability and Trust”
                 </td>
               </tr>
 
