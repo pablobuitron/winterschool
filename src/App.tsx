@@ -549,11 +549,11 @@ const WorkingGroupsSection: React.FC = () => (
           WG 2 – Human-in-the-Loop / Cybernetic Control in Human–AI Systems
         </h3>
 
-        <div>
-          <p className="mt-3">
+        <div className="mt-3">
+          <p className="font-semibold">
             Andrea Beretta - Humane Technology Lab HTLAB - Università Cattolica del Sacro Cuore
           </p>
-          <p className="mt-3">  
+          <p className="font-semibold">  
             Luca D’Elia - Sapienza University of Rome
           </p>
         </div>
