@@ -1748,10 +1748,20 @@ const RegistrationSection: React.FC = () => (
 /* ---------- IMPORTANT DATES ---------- */
 const ImportantDatesSection: React.FC = () => (
   <SectionWrapper title="Important Dates">
-    <div className="max-w-4xl mx-auto text-gray-800 space-y-8">
+    <div className="max-w-4xl mx-auto text-gray-800 space-y-4">
+
       <p className="text-base leading-relaxed">
-        TBA
+        <strong>November 30:</strong> Registration deadline
       </p>
+
+      <p className="text-base leading-relaxed">
+        <strong>December 10:</strong> Payment deadline
+      </p>
+
+      <p className="text-base leading-relaxed">
+        <strong>January 10:</strong> Poster abstract submission deadline
+      </p>
+
     </div>
   </SectionWrapper>
 );
