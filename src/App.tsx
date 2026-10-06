@@ -1709,6 +1709,27 @@ const RegistrationSection: React.FC = () => (
       </ul>
 
       <p>
+        The fee is set at <strong>€250.00 plus VAT</strong> and includes—in
+        addition to participation in all school activities—coffee breaks and the
+        social dinner.
+      </p>
+
+      <p>
+        Please be informed that as of <strong>November 30th, 2026</strong>, those
+        who have filled out the application form will be contacted via email by{' '}
+        <strong>Dr. Tiziana Giovannelli</strong> (
+        <a
+          href="mailto:tiziana.giovannelli@uninettunouniversity.net"
+          className="text-blue-700 underline hover:text-[#17172F]"
+        >
+          tiziana.giovannelli@uninettunouniversity.net
+        </a>
+        ), who will send you a link to complete the final registration and payment
+        for the{' '}
+        <strong>Winter School on Computational Learning and Design</strong>.
+      </p>
+
+      <p>
         You can register{" "}
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSe9T4RHCgxVi65PdoA0hvUKMNMn4FINWV8rgmPWgfNWFt1OLw/viewform?usp=publish-editor"
