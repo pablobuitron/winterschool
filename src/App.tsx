@@ -54,6 +54,7 @@ function App() {
     'Posters',
     'Program',
     'Registration',
+    'Recommended and Partner Hotels',
     'Important Dates',
     //'Sponsors',
     'Venue',
@@ -93,6 +94,8 @@ function App() {
         return <ProgramSection />;
       case 'registration':
         return <RegistrationSection />;
+      case 'recommended-and-partner-hotels':
+        return <HotelsSection />;
       case 'important-dates':
         return <ImportantDatesSection />;
       //case 'sponsors':
@@ -1744,6 +1747,20 @@ const RegistrationSection: React.FC = () => (
     </div>
   </SectionWrapper>
 );
+
+
+/* ---------- RECOMMENDED AND PARTNER HOTELS ---------- */
+const HotelsSection: React.FC = () => (
+  <SectionWrapper title="Recommended and Partner Hotels">
+    <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
+      <p className="text-base leading-relaxed">
+        Information about recommended and partner hotels will be available soon.
+      </p>
+    </div>
+  </SectionWrapper>
+);
+
+
 
 /* ---------- IMPORTANT DATES ---------- */
 const ImportantDatesSection: React.FC = () => (
