@@ -1897,7 +1897,7 @@ const HotelsSection: React.FC = () => (
 
       <div>
         <h3 className="text-2xl font-semibold text-[#17172F]">
-          Combo Milano
+          Hotel Combo Milano
         </h3>
 
         <p className="mt-3 text-base leading-relaxed">
