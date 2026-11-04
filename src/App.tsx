@@ -802,16 +802,98 @@ const WorkingGroupsSection: React.FC = () => (
 /* ---------- POSTERS ---------- */
 const PostersSection: React.FC = () => (
   <SectionWrapper title="Posters">
-    <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
-      <p className="text-base leading-relaxed">
-        Participants will have the opportunity to present their research and
-        projects during the poster session.
-      </p>
+    <div className="max-w-4xl mx-auto text-gray-800 space-y-8">
 
-      <p className="text-base leading-relaxed">
-        Information about poster submission, format and deadlines will be
-        announced soon.
-      </p>
+      <div>
+        <p className="text-base leading-relaxed">
+          Participants are encouraged to present their research results during
+          the poster session. Poster abstracts (one page in PDF format) should
+          be submitted by <strong>January 10, 2027</strong>, via email to{' '}
+          <strong>Clemente Cesarano</strong> (
+          <a
+            href="mailto:c.cesarano@uninettuno.it"
+            className="text-blue-700 underline hover:text-[#17172F]"
+          >
+            c.cesarano@uninettuno.it
+          </a>
+          ) and <strong>Alessandro Pollini</strong> (
+          <a
+            href="mailto:a.pollini@uninettuno.it"
+            className="text-blue-700 underline hover:text-[#17172F]"
+          >
+            a.pollini@uninettuno.it
+          </a>
+          ).
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-2xl font-semibold text-[#17172F] mb-4">
+          Poster Submission Guidelines
+        </h3>
+
+        <p className="text-base leading-relaxed mb-5">
+          Please provide a high-resolution PDF version of the poster.
+        </p>
+
+        <p className="text-base leading-relaxed mb-4">
+          The submitted material must include the following:
+        </p>
+
+        <ul className="list-disc pl-6 space-y-3 text-base leading-relaxed">
+          <li>
+            <strong>Title in English:</strong> maximum 55 characters,
+            including spaces, using British English.
+          </li>
+
+          <li>
+            <strong>Subtitle in English:</strong> maximum 100 characters,
+            including spaces, using British English.
+          </li>
+
+          <li>
+            <strong>Abstract in English:</strong> maximum 3,000 characters,
+            including spaces, using British English.
+          </li>
+
+          <li>
+            <strong>Five keywords in English</strong>, using British English.
+          </li>
+
+          <li>
+            <strong>Main text in English:</strong> minimum 6,000 and maximum
+            12,000 characters, including spaces.
+          </li>
+
+          <li>
+            <strong>Bibliographical references:</strong> APA Style, 7th
+            edition, with a maximum of 1,700 characters including spaces.
+          </li>
+
+          <li>
+            <strong>One image:</strong> JPG format, 300 dpi, with a minimum
+            width of 20 cm, accompanied by a caption in English or Italian.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold text-[#17172F] mb-3">
+          Contributor Information
+        </h3>
+
+        <p className="text-base leading-relaxed">
+          Personal details, roles and affiliations of all contributors will
+          also be required. This information will only be made public after the
+          completion of the double-blind peer review process.
+        </p>
+
+        <p className="mt-4 text-base leading-relaxed">
+          For each contributor, please provide their name, role, institutional
+          affiliation, contact details and ORCID.
+        </p>
+      </div>
+
     </div>
   </SectionWrapper>
 );
@@ -991,12 +1073,12 @@ const SeminarsSection: React.FC = () => (
         </div>
       </div>
 
-      {/* ---------- Gian Marco TODESCO ---------- */}
-      <div>
-        <p className="text-xl font-semibold">Gian Marco Todesco</p>
+      {/* ---------- Andrea del Sole ---------- */}
+      <div className="border-b border-gray-200 pb-10">
+        <p className="text-xl font-semibold">Andrea del Sole</p>
 
         <p className="text-base text-gray-600 mt-1">
-          Arakne s.r.l. <br /> Roma, Italy
+          NEAT <br /> Roma, Italy
         </p>
 
         <div className="mt-4">
@@ -1005,7 +1087,7 @@ const SeminarsSection: React.FC = () => (
           </p>
 
           <h3 className="text-lg font-semibold leading-snug mt-1">
-            Creative Coding: Drawing with Code, Live in the Browser
+            TBA
           </h3>
         </div>
 
@@ -1015,12 +1097,66 @@ const SeminarsSection: React.FC = () => (
           </p>
 
           <p className="mt-2 text-base leading-relaxed">
-            In 1962 the Arte Programmata exhibition in Milan showed that a few explicit rules can generate rich visual forms.
-            Today, a web browser and a text editor are all it takes to explore the same idea. 
-            In this live coding session we will write short JavaScript programs that draw and animate, 
-            starting from an empty page and using mostly the plain HTML Canvas. 
-            Unlike the generative models of machine learning, here every shape can be traced back to a line of code that anyone can read and change.
+            TBA
+          </p>
+        </div>
+      </div>
 
+      {/* ---------- Antonio Rizzo ---------- */}
+      <div className="border-b border-gray-200 pb-10">
+        <p className="text-xl font-semibold">Antonio Rizzo</p>
+
+        <p className="text-base text-gray-600 mt-1">
+          DISPOC <br />
+          University of Siena, Italy
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            TBA
+          </h3>
+        </div>
+
+        <div className="mt-6">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
+          </p>
+
+          <p className="mt-2 text-base leading-relaxed">
+            TBA
+          </p>
+        </div>
+      </div>
+
+      {/* ---------- Paolo Spada ---------- */}
+      <div>
+        <p className="text-xl font-semibold">Paolo Spada</p>
+
+        <p className="text-base text-gray-600 mt-1">
+          SpadaConcept s.r.l. <br /> Torino, Italy
+        </p>
+
+        <div className="mt-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Title
+          </p>
+
+          <h3 className="text-lg font-semibold leading-snug mt-1">
+            TBA
+          </h3>
+        </div>
+
+        <div className="mt-6">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+            Abstract
+          </p>
+
+          <p className="mt-2 text-base leading-relaxed">
+            TBA
           </p>
         </div>
       </div>
@@ -1757,10 +1893,35 @@ const RegistrationSection: React.FC = () => (
 /* ---------- RECOMMENDED AND PARTNER HOTELS ---------- */
 const HotelsSection: React.FC = () => (
   <SectionWrapper title="Recommended and Partner Hotels">
-    <div className="max-w-4xl mx-auto text-gray-800 space-y-6">
-      <p className="text-base leading-relaxed">
-        Information about recommended and partner hotels will be available soon.
-      </p>
+    <div className="max-w-4xl mx-auto text-gray-800 space-y-8">
+
+      <div>
+        <h3 className="text-2xl font-semibold text-[#17172F]">
+          Combo Milano
+        </h3>
+
+        <p className="mt-3 text-base leading-relaxed">
+          Participants of the Winter School can book their accommodation at
+          Combo Milano.
+        </p>
+
+        <p className="mt-3">
+          <a
+            href="https://thisiscombo.com/it/citta/milano"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 underline hover:text-[#17172F]"
+          >
+            Visit Combo Milano
+          </a>
+        </p>
+
+        <p className="mt-4 text-base">
+          <strong>Discount code:</strong>{' '}
+          <span className="font-semibold">winterschool@combo</span>
+        </p>
+      </div>
+
     </div>
   </SectionWrapper>
 );
