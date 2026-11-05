@@ -196,18 +196,18 @@ const SectionWrapper: React.FC<{
 /* ---------- HOME ---------- */
 const HomeSection: React.FC = () => (
   <>
-    <section className="relative bg-[#666666] text-[#17172F] py-16 lg:py-20">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
+    <section className="relative bg-[#666666] text-[#17172F] py-10 lg:py-12">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-          {/* ---------- TEXT ---------- */}
+          {/* ---------- LEFT CONTENT ---------- */}
           <div className="flex flex-col justify-center">
 
-            <p className="text-base md:text-lg tracking-[0.22em] text-[#17172F] mb-5 leading-relaxed">
+            <p className="text-base md:text-lg tracking-[0.22em] leading-relaxed mb-4">
               international and interdisciplinary winter school on
             </p>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-5">
               Computational
               <br />
               Learning
@@ -215,7 +215,7 @@ const HomeSection: React.FC = () => (
               and Design
             </h1>
 
-            <p className="text-2xl md:text-3xl font-semibold leading-tight mb-8">
+            <p className="text-2xl md:text-3xl font-semibold leading-tight mb-7">
               Practical Experiments and Industrial Cases
             </p>
 
@@ -228,12 +228,12 @@ const HomeSection: React.FC = () => (
           </div>
 
           {/* ---------- IMAGE ---------- */}
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <div className="relative w-full">
               <img
                 src="./arteprogramata.png"
                 alt="Arte programmata. 25 riquadri in bianco e nero"
-                className="w-full h-full max-h-[680px] rounded-2xl shadow-2xl border border-white/30 object-cover"
+                className="w-full aspect-square rounded-2xl shadow-2xl border border-white/30 object-cover"
               />
 
               <div className="absolute bottom-3 right-3 max-w-[85%] rounded-lg bg-black/65 px-4 py-3 text-right text-xs md:text-sm leading-relaxed text-white backdrop-blur-sm">
