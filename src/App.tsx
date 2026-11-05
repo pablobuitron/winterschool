@@ -120,15 +120,14 @@ function App() {
             </h1>
 
             <div className="hidden md:block">
-              <div className="ml-4 flex items-stretch space-x-4 h-16">
+              <div className="ml-4 flex items-baseline space-x-4">
                 {navItems.map((item) => (
                   <button
                     key={item}
                     onClick={() => handleNavClick(item)}
-                    className={`px-3 py-2 text-sm rounded-md transition-colors text-center leading-tight flex items-center justify-center ${
-                        item.toLowerCase().replace(/ /g, '-')
-                      ? 'bg-[#17172F] text-white font-bold'
-                      : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
+                    className={`px-3 py-2 text-sm rounded-md transition-colors text-center leading-tight ${activeSection === item.toLowerCase().replace(/ /g, '-')
+                        ? 'bg-[#17172F] text-white font-bold'
+                        : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
                       }`}
                   >
                     {item}
