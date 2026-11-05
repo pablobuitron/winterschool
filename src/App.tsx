@@ -120,12 +120,12 @@ function App() {
             </h1>
 
             <div className="hidden md:block">
-              <div className="ml-4 flex items-baseline space-x-4">
+              <div className="ml-4 flex items-stretch space-x-4 h-16">
                 {navItems.map((item) => (
                   <button
                     key={item}
                     onClick={() => handleNavClick(item)}
-                    className={`px-3 py-2 text-sm rounded-md transition-colors ${activeSection ===
+                    className={`px-3 py-2 text-sm rounded-md transition-colors text-center leading-tight flex items-center justify-center ${
                         item.toLowerCase().replace(/ /g, '-')
                       ? 'bg-[#17172F] text-white font-bold'
                       : 'text-[#17172F] hover:bg-gray-100 hover:text-[#F53A4B] font-normal'
@@ -197,62 +197,67 @@ const SectionWrapper: React.FC<{
 /* ---------- HOME ---------- */
 const HomeSection: React.FC = () => (
   <>
-    <section className="relative bg-[#666666] text-[#17172F] min-h-screen py-28 flex items-center">
-      <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
+    <section className="relative bg-[#666666] text-[#17172F] py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
 
-        <div className="flex-1 text-left space-y-8">
-          <p className="text-lg md:text-xl uppercase tracking-[0.25em] text-[#17172F] font-medium">
-            International and Interdisciplinary Winter School on
-          </p>
+          {/* ---------- TEXT ---------- */}
+          <div className="flex flex-col justify-center">
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            Computational Learning
-            <br />
-            and Design
-          </h1>
-
-          <div className="text-xl md:text-3xl text-[#17172F] space-y-2">
-            <p>
-              <strong>Practical Experiments and Industrial Cases</strong>
+            <p className="text-base md:text-lg tracking-[0.22em] text-[#17172F] mb-5 leading-relaxed">
+              international and interdisciplinary winter school on
             </p>
-          </div>
 
-          <div className="text-xl md:text-2xl text-[#17172F] space-y-2">
-            <br />
-            <p>February 1–5, 2027</p>
-            <p>Domus Academy</p>
-            <p>Via Carlo Darwin, 20 — Milano, Italy</p>
-          </div>
-        </div>
-
-        <div className="flex-1 flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-2xl">
-            <img
-              src="./arteprogramata.png"
-              alt="Arte programmata. 25 riquadri in bianco e nero"
-              className="w-full rounded-2xl shadow-2xl border border-white/30 object-cover aspect-[1/1]"
-            />
-
-            <div className="absolute bottom-3 right-3 max-w-[85%] rounded-lg bg-black/65 px-4 py-3 text-right text-xs md:text-sm leading-relaxed text-white backdrop-blur-sm">
-              <span className="font-semibold italic">
-                Arte programmata. 25 riquadri in bianco e nero.
-              </span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
+              Computational
               <br />
-              <span className="text-white/85">
-                (E. Mari, for the catalogue of the exhibition{' '}
-                <em>Arte Programmata</em> in Düsseldorf, 1963, image from MoMA)
-              </span>
+              Learning
+              <br />
+              and Design
+            </h1>
+
+            <p className="text-2xl md:text-3xl font-semibold leading-tight mb-8">
+              Practical Experiments and Industrial Cases
+            </p>
+
+            <div className="text-xl md:text-2xl leading-relaxed space-y-1">
+              <p>February 1–5, 2027</p>
+              <p>Domus Academy</p>
+              <p>Via Carlo Darwin, 20 — Milano, Italy</p>
+            </div>
+
+          </div>
+
+          {/* ---------- IMAGE ---------- */}
+          <div className="flex items-center">
+            <div className="relative w-full">
+              <img
+                src="./arteprogramata.png"
+                alt="Arte programmata. 25 riquadri in bianco e nero"
+                className="w-full h-full max-h-[680px] rounded-2xl shadow-2xl border border-white/30 object-cover"
+              />
+
+              <div className="absolute bottom-3 right-3 max-w-[85%] rounded-lg bg-black/65 px-4 py-3 text-right text-xs md:text-sm leading-relaxed text-white backdrop-blur-sm">
+                <span className="font-semibold italic">
+                  Arte programmata. 25 riquadri in bianco e nero.
+                </span>
+                <br />
+                <span className="text-white/85">
+                  (E. Mari, for the catalogue of the exhibition{' '}
+                  <em>Arte Programmata</em> in Düsseldorf, 1963, image from MoMA)
+                </span>
+              </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
 
-    <section className="relative z-10 bg-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative z-10 bg-white py-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
 
-        <div className="max-w-5xl mx-auto space-y-16">
+        <div className="space-y-14">
 
           <div>
             <p className="text-left mb-6">
