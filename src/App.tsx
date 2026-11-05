@@ -310,7 +310,10 @@ const HomeSection: React.FC = () => (
             <p className="text-left mb-6">
               <strong>Partners:</strong>
             </p>
+
             <div className="flex flex-wrap justify-start items-center gap-12">
+
+              {/* Domus Academy */}
               <a
                 href="https://www.domusacademy.com/it/"
                 target="_blank"
@@ -323,6 +326,35 @@ const HomeSection: React.FC = () => (
                   className="h-32 object-contain bg-white p-4 rounded-lg shadow"
                 />
               </a>
+
+              {/* SISSA mathLab */}
+              <a
+                href="https://mathlab.sissa.it/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./sissa-mathlab-logo.png"
+                  alt="SISSA mathLab"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
+
+              {/* SIMAI */}
+              <a
+                href="https://simai.uninettunouniversity.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./simai-logo.svg"
+                  alt="SIMAI"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
+
             </div>
           </div>
 
