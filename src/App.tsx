@@ -359,6 +359,20 @@ const HomeSection: React.FC = () => (
                 />
               </a>
 
+              {/* ANA&A */}
+              <a
+                href="https://simai.uninettunouniversity.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img
+                  src="./anaa-logo.png"
+                  alt="ANA&A – Approssimazione Numerica ed Analitica"
+                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
+                />
+              </a>
+
             </div>
           </div>
 
