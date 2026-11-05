@@ -120,7 +120,7 @@ function App() {
             </h1>
 
             <div className="hidden md:block">
-              <div className="ml-4 flex items-baseline space-x-4">
+              <div className="ml-4 flex items-center space-x-4">
                 {navItems.map((item) => (
                   <button
                     key={item}
