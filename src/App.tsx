@@ -369,7 +369,7 @@ const HomeSection: React.FC = () => (
                 <img
                   src="./annalogo.png"
                   alt="ANA&A – Approssimazione Numerica ed Analitica"
-                  className="h-36 object-contain bg-white p-4 rounded-lg shadow"
+                  className="h-40 object-contain bg-white p-4 rounded-lg shadow"
                 />
               </a>
 
