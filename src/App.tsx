@@ -1167,7 +1167,7 @@ const SeminarsSection: React.FC = () => (
           </p>
 
           <h3 className="text-lg font-semibold leading-snug mt-1">
-            TBA
+            As We May Think, Together
           </h3>
         </div>
 
@@ -1177,7 +1177,7 @@ const SeminarsSection: React.FC = () => (
           </p>
 
           <p className="mt-2 text-base leading-relaxed">
-            TBA
+            In 1945 Vannevar Bush imagined the Memex, a device that would let each of us build associative trails through the record of knowledge. Eight decades later, the Memex talks back. Large language models propose the trails themselves, opening a new form of dialogue, and therefore of thought. This lecture keeps Bush’s promise but profoundly changes its conditions. LLMs are trained toward the plausible and the pleasing, not the true or the new. The cost falls on judgment calls without ground truth, which is where design, abductive by nature, lives. Recent experiments show that experts largely adopt the leanings of the AI agents they work with, then defend those choices as their own, often without noticing where they came from. Drawing on a framework that carries dialogic support from diagnostic to design reasoning, where divergence must come before convergence, I propose three conditions for designing with LLMs: friction, alterity and verification. Finally, I ask who decides which possibilities become actions.
           </p>
         </div>
       </div>
