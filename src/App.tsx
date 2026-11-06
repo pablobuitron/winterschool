@@ -331,20 +331,6 @@ const HomeSection: React.FC = () => (
                 />
               </a>
 
-              {/* SISSA mathLab */}
-              <a
-                href="https://mathlab.sissa.it/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform hover:scale-105"
-              >
-                <img
-                  src="./sissa-mathlab-logo.png"
-                  alt="SISSA mathLab"
-                  className="h-32 object-contain bg-white p-4 rounded-lg shadow"
-                />
-              </a>
-
               {/* SIMAI */}
               <a
                 href="https://simai.uninettunouniversity.net/"
@@ -1123,12 +1109,12 @@ const SeminarsSection: React.FC = () => (
         </div>
       </div>
 
-      {/* ---------- Andrea del Sole ---------- */}
+      {/* ---------- Gian Marco Todesco ---------- */}
       <div className="border-b border-gray-200 pb-10">
-        <p className="text-xl font-semibold">Andrea del Sole</p>
+        <p className="text-xl font-semibold">Gian Marco TODESCO</p>
 
         <p className="text-base text-gray-600 mt-1">
-          NEAT <br /> Roma, Italy
+          Arakne s.r.l.
         </p>
 
         <div className="mt-4">
@@ -1137,7 +1123,7 @@ const SeminarsSection: React.FC = () => (
           </p>
 
           <h3 className="text-lg font-semibold leading-snug mt-1">
-            TBA
+            Creative Coding: Drawing with Code, Live in the Browser
           </h3>
         </div>
 
@@ -1147,7 +1133,13 @@ const SeminarsSection: React.FC = () => (
           </p>
 
           <p className="mt-2 text-base leading-relaxed">
-            TBA
+            In 1962 the Arte Programmata exhibition in Milan showed that a few
+            explicit rules can generate rich visual forms. Today, a web browser and a
+            text editor are all it takes to explore the same idea. In this live coding
+            session we will write short JavaScript programs that draw and animate,
+            starting from an empty page and using mostly the plain HTML Canvas.
+            Unlike the generative models of machine learning, here every shape can be
+            traced back to a line of code that anyone can read and change.
           </p>
         </div>
       </div>
