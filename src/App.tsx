@@ -1111,7 +1111,7 @@ const SeminarsSection: React.FC = () => (
 
       {/* ---------- Gian Marco Todesco ---------- */}
       <div className="border-b border-gray-200 pb-10">
-        <p className="text-xl font-semibold">Gian Marco TODESCO</p>
+        <p className="text-xl font-semibold">Gian Marco Todesco</p>
 
         <p className="text-base text-gray-600 mt-1">
           Arakne s.r.l.
