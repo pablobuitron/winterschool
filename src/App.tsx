@@ -203,8 +203,8 @@ const HomeSection: React.FC = () => (
           {/* ---------- LEFT CONTENT ---------- */}
           <div className="flex flex-col justify-center">
 
-            <p className="text-base md:text-lg tracking-[0.22em] leading-relaxed mb-4">
-              international and interdisciplinary winter school on
+            <p className="text-base md:text-lg leading-relaxed mb-4"> /* </p><p className="text-base md:text-lg *tracking-[0.22em] leading-relaxed mb-4">*/
+              International and interdisciplinary winter school on
             </p>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-5">
