@@ -203,26 +203,67 @@ const HomeSection: React.FC = () => (
           {/* ---------- LEFT CONTENT ---------- */}
           <div className="flex flex-col justify-center">
 
-            <p className="text-base md:text-lg leading-relaxed mb-4">
+            {/* First line */}
+            <p
+              className="mb-5"
+              style={{
+                fontFamily: "'Courier New', Courier, monospace",
+                fontSize: '16px',
+                lineHeight: '24px',
+                fontWeight: 700,
+              }}
+            >
               International and Interdisciplinary winter school on
             </p>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-5">
+            {/* Main title */}
+            <h1
+              className="font-bold mb-7"
+              style={{
+                fontFamily: "'Courier New', Courier, monospace",
+                fontSize: '72px',
+                lineHeight: '1.05',
+              }}
+            >
               Computational
               <br />
-              Learning
+              Learning and
               <br />
-              and Design
+              Design
             </h1>
 
-            <p className="text-2xl md:text-3xl font-semibold leading-tight mb-7">
-              Practical Experiments and Industrial Cases
+            {/* Subtitle */}
+            <p
+              className="font-bold mb-10"
+              style={{
+                fontFamily: "'Courier New', Courier, monospace",
+                fontSize: '26px',
+                lineHeight: '1.3',
+              }}
+            >
+              Practical Experiments
+              <br />
+              and Industrial Cases
             </p>
 
-            <div className="text-xl md:text-2xl leading-relaxed space-y-1">
-              <p>February 1–5, 2027</p>
-              <p>Domus Academy</p>
-              <p>Via Carlo Darwin, 20 — Milano, Italy</p>
+            {/* Date and venue */}
+            <div
+              className="space-y-1"
+              style={{
+                fontFamily: "Georgia, 'Times New Roman', serif",
+              }}
+            >
+              <p className="text-xl md:text-2xl font-bold">
+                February 1–5, 2027
+              </p>
+
+              <p className="text-lg md:text-xl">
+                Domus Academy
+              </p>
+
+              <p className="text-lg md:text-xl">
+                Via Carlo Darwin, 20 — Milano, Italy
+              </p>
             </div>
 
           </div>
