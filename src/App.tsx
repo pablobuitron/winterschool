@@ -2010,7 +2010,7 @@ const HotelsSection: React.FC = () => (
 
         <p className="mt-3 text-base leading-relaxed">
           Participants of the Winter School can book their accommodation at
-          B&B Hotel MILANO La Spezia.
+          B&B Hotel MILANO La Spezia located at Via Spezia 25, Milan
         </p>
 
         <p className="mt-3">
@@ -2020,7 +2020,7 @@ const HotelsSection: React.FC = () => (
             rel="noopener noreferrer"
             className="text-blue-700 underline hover:text-[#17172F]"
           >
-            Visit B&B Hotel MILANO La Spezia, Via Spezia 25, Milan
+            Visit B&B Hotel MILANO La Spezia
           </a>
         </p>
       </div>
