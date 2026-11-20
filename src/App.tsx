@@ -484,9 +484,7 @@ const AboutSection: React.FC = () => (
           </p>
 
           <p>
-            The Winter School aims to bring together students, researchers,
-            educators and professionals interested in the intersection of
-            computational methods, machine learning, mathematics and design.
+            The Winter School aims to bring together students, researchers, educators and professionals interested in the intersection of industrial design, computational methods, applied mathematics and cognitive science. The initiative starts from the assumption that these disciplines share a common ground for dialogue in the form of logic, and what this means for the way in which we construct, evaluate and interact with computational, adaptive and intelligent artefacts.
           </p>
 
           <p>
